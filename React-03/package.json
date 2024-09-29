@@ -1,0 +1,32 @@
+{
+  "name": "react-02",
+  "version": "1.0.0",
+  "description": "This is Advance React Part 2",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushyadavone/React-Projects.git"
+  },
+  "keywords": [],
+  "author": "Ayush Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayushyadavone/React-Projects/issues"
+  },
+  "homepage": "https://github.com/ayushyadavone/React-Projects#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
