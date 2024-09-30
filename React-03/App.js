@@ -1,11 +1,20 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-const jsxHeading = <h1 className="heading">h1 tag using JSX!</h1>
+const Title = () => <h1 className="heading">Title</h1>
+
+const para = <p>Paragraph</p>
+
+const Heading = () => (
+    <div className="container">
+        <Title /> 
+        <h1 className="heading">Heading</h1>
+        {para}
+    </div>
+)
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-
-root.render(jsxHeading) 
+root.render(<Heading />) // Rendering a functional component
 
 // Notes :
 
@@ -18,3 +27,9 @@ root.render(jsxHeading)
 // Babel is installed by Parcel, and it converts JSX code into code that React, JavaScript engines, and browsers can understand.
 
 // JSX is converted into React.createElement, which returns an object. Using the render method, it is then converted into an HTML element. The conversion from JSX to React.createElement is done by Babel.
+
+// There are two ways of creating react components,
+// (i) Class based components (old)
+// (ii) Functional components (new) - it's a simple JS function which returns some JSX code or a function which is returning a React Element or a bunch of React Elements is a functional component.
+
+// A component inside another component is known as component composition.
