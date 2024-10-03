@@ -10,7 +10,7 @@ const RestaurantCard = (props) => { // Here, props is an object in itself
         avgRating, 
         costForTwo, 
         sla: {deliveryTime} 
-    } = resData?.card?.card?.info // optional chaining operator
+    } = resData?.info // optional chaining operator
 
     return (
         <div className="res-card">

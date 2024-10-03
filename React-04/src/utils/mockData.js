@@ -1,964 +1,1838 @@
 const resList = [
-    {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "232061",
-              "name": "Al Baike Arabecue",
-              "cloudinaryImageId": "84d3d537d758d58f897c201388de698c",
-              "locality": "Gomti Nagar",
-              "areaName": "Gomti Nagar",
-              "costForTwo": "₹200 for two",
-              "cuisines": [
-                "Snacks",
-                "Fast Food",
-                "Burgers",
-                "Continental",
-                "American",
-                "Biryani",
-                "Mughlai"
-              ],
-              "avgRating": 4.1,
-              "parentId": "28969",
-              "avgRatingString": "4.1",
-              "totalRatingsString": "5.0K+",
-              "promoted": true,
-              "adTrackingId": "cid=19214112~p=2~adgrpid=19214112#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=232061~eid=b5274286-69c5-4660-a1fa-2d0b169cfce1~srvts=1727894118139~collid=83637",
-              "sla": {
-                "deliveryTime": 30,
-                "lastMileTravel": 7.2,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "7.2 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2024-10-03 05:01:00",
-                "opened": true
-              },
-              "badges": {
-                
-              },
-              "isOpen": true,
-              "aggregatedDiscountInfoV2": {
-                "header": "20% OFF",
-                "shortDescriptionList": [
                   {
-                    "meta": "Use PARTY",
-                    "discountType": "Percentage",
-                    "operationType": "RESTAURANT"
-                  }
-                ],
-                "descriptionList": [
-                  {
-                    "meta": "20% off | Use code PARTY",
-                    "discountType": "Percentage",
-                    "operationType": "RESTAURANT"
-                  }
-                ]
-              },
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textBased": {
-                    
-                  },
-                  "imageBased": {
-                    
-                  },
-                  "textExtendedBadges": {
-                    
-                  }
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {
-                  
-                },
-                "subTitle": {
-                  
-                },
-                "message": {
-                  
-                },
-                "customIcon": {
-                  
-                }
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {
-                    
-                  },
-                  "video": {
-                    
-                  }
-                }
-              },
-              "reviewsSummary": {
-                
-              },
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {
-                
-              },
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "4.0",
-                  "ratingCount": "1.5K+"
-                },
-                "source": "GOOGLE",
-                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-              "campaignId": "19214112"
-            },
-            "analytics": {
-              
-            },
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=232061&source=collection&query=Burger",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-    },
-    {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "748511",
-              "name": "Rominus Pizza And Burger",
-              "cloudinaryImageId": "df3122a3d49482073a839f47d0ae4281",
-              "locality": "Hazratganj",
-              "areaName": "Hazratganj",
-              "costForTwo": "₹350 for two",
-              "cuisines": [
-                "Pizzas",
-                "Italian-American",
-                "American",
-                "Barbecue",
-                "Snacks",
-                "Grill",
-                "Italian",
-                "Pastas",
-                "Sweets",
-                "Desserts",
-                "Beverages"
-              ],
-              "avgRating": 4.4,
-              "parentId": "8387",
-              "avgRatingString": "4.4",
-              "totalRatingsString": "2.7K+",
-              "sla": {
-                "deliveryTime": 23,
-                "lastMileTravel": 1.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "1.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2024-10-03 04:00:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Pizza.png",
-                    "description": "Delivery!"
-                  }
-                ]
-              },
-              "isOpen": true,
-              "aggregatedDiscountInfoV2": {
-                "header": "60% OFF",
-                "shortDescriptionList": [
-                  {
-                    "meta": "Use STEALDEAL",
-                    "discountType": "Percentage",
-                    "operationType": "RESTAURANT"
-                  }
-                ],
-                "descriptionList": [
-                  {
-                    "meta": "60% off up to ₹120 | Use code STEALDEAL",
-                    "discountType": "Percentage",
-                    "operationType": "RESTAURANT"
-                  }
-                ]
-              },
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Pizza.png",
-                          "description": "Delivery!"
-                        }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {
-                    
-                  },
-                  "textBased": {
-                    
-                  }
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {
-                  
-                },
-                "subTitle": {
-                  
-                },
-                "message": {
-                  
-                },
-                "customIcon": {
-                  
-                }
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {
-                    
-                  },
-                  "video": {
-                    
-                  }
-                }
-              },
-              "reviewsSummary": {
-                
-              },
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {
-                
-              },
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "5.0",
-                  "ratingCount": "1.9K+"
-                },
-                "source": "GOOGLE",
-                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-              
-            },
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=748511&source=collection&query=Burger",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-    },
-    {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "532693",
-              "name": "McDonald's",
-              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/14/d11235da-f841-46b7-be25-782461fc04c7_532693.JPG",
-              "locality": "Habibullah Estate Road",
-              "areaName": "Hazratganj",
-              "costForTwo": "₹400 for two",
-              "cuisines": [
-                "American"
-              ],
-              "avgRating": 4.4,
-              "parentId": "630",
-              "avgRatingString": "4.4",
-              "totalRatingsString": "6.7K+",
-              "promoted": true,
-              "adTrackingId": "cid=19206788~p=4~adgrpid=19206788#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=532693~eid=7781d0ef-9f92-49be-b051-0d135c84a227~srvts=1727894118139~collid=83637",
-              "sla": {
-                "deliveryTime": 18,
-                "lastMileTravel": 1.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15-20 mins",
-                "lastMileTravelString": "1.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2024-10-03 00:45:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Burger.png",
-                    "description": "Delivery!"
-                  },
-                  {
-                    "imageId": "Rxawards/_CATEGORY-Burger.png",
-                    "description": "Delivery!"
-                  }
-                ]
-              },
-              "isOpen": true,
-              "aggregatedDiscountInfoV2": {
-                
-              },
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Burger.png",
-                          "description": "Delivery!"
+                    "info": {
+                      "id": "539218",
+                      "name": "Mahaveer Restaurant",
+                      "cloudinaryImageId": "yzmhvc4vwekx5fwfpj9r",
+                      "locality": "Asifganj",
+                      "areaName": "Sadar Thana",
+                      "costForTwo": "₹200 for two",
+                      "cuisines": [
+                        "South Indian"
+                      ],
+                      "avgRating": 4.3,
+                      "veg": true,
+                      "parentId": "130073",
+                      "avgRatingString": "4.3",
+                      "totalRatingsString": "1.3K+",
+                      "sla": {
+                        "deliveryTime": 17,
+                        "lastMileTravel": 0.5,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "15-20 mins",
+                        "lastMileTravelString": "0.5 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
                         }
                       },
-                      {
-                        "attributes": {
-                          "imageId": "Rxawards/_CATEGORY-Burger.png",
-                          "description": "Delivery!"
-                        }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {
-                    
-                  },
-                  "textBased": {
-                    
-                  }
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {
-                  
-                },
-                "subTitle": {
-                  
-                },
-                "message": {
-                  
-                },
-                "customIcon": {
-                  
-                }
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {
-                    
-                  },
-                  "video": {
-                    
-                  }
-                }
-              },
-              "reviewsSummary": {
-                
-              },
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {
-                
-              },
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-              "campaignId": "19206788"
-            },
-            "analytics": {
-              
-            },
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=532693&source=collection&query=Burger",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-    },
-    {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "333677",
-              "name": "Wat-A-Burger! - India Ka Burger",
-              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/22/71a44c76-2f01-4b5a-840f-9a54c3b0351a_eb12081f-4dd5-402b-a898-7c8ed195c1f6.jpg",
-              "locality": "Hazratganj",
-              "areaName": "Hazratganj",
-              "costForTwo": "₹300 for two",
-              "cuisines": [
-                "Burgers",
-                "Fast Food",
-                "Continental",
-                "American",
-                "Beverages",
-                "Desserts"
-              ],
-              "avgRating": 4.2,
-              "parentId": "471020",
-              "avgRatingString": "4.2",
-              "totalRatingsString": "4.6K+",
-              "sla": {
-                "deliveryTime": 21,
-                "lastMileTravel": 0.2,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "0.2 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2024-10-03 04:00:00",
-                "opened": true
-              },
-              "badges": {
-                
-              },
-              "isOpen": true,
-              "aggregatedDiscountInfoV2": {
-                "header": "60% OFF",
-                "shortDescriptionList": [
-                  {
-                    "meta": "Use TRYNEW",
-                    "discountType": "Percentage",
-                    "operationType": "RESTAURANT"
-                  }
-                ],
-                "descriptionList": [
-                  {
-                    "meta": "60% off up to ₹120 | Use code TRYNEW",
-                    "discountType": "Percentage",
-                    "operationType": "RESTAURANT"
-                  }
-                ]
-              },
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textExtendedBadges": {
-                    
-                  },
-                  "textBased": {
-                    
-                  },
-                  "imageBased": {
-                    
-                  }
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {
-                  
-                },
-                "subTitle": {
-                  
-                },
-                "message": {
-                  
-                },
-                "customIcon": {
-                  
-                }
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {
-                    
-                  },
-                  "video": {
-                    
-                  }
-                }
-              },
-              "reviewsSummary": {
-                
-              },
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {
-                
-              },
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "4.0",
-                  "ratingCount": "331"
-                },
-                "source": "GOOGLE",
-                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-              
-            },
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=333677&source=collection&query=Burger",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-    },
-    {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "66673",
-              "name": "Mr. Brown - Danbro",
-              "cloudinaryImageId": "2c469b5d88f84b7495b9825d06e4bb9b",
-              "locality": "Aliganj",
-              "areaName": "Aliganj",
-              "costForTwo": "₹350 for two",
-              "cuisines": [
-                "Bakery",
-                "Italian",
-                "Snacks",
-                "Healthy Food",
-                "Pizzas",
-                "Beverages"
-              ],
-              "avgRating": 4.6,
-              "veg": true,
-              "parentId": "561622",
-              "avgRatingString": "4.6",
-              "totalRatingsString": "39K+",
-              "promoted": true,
-              "adTrackingId": "cid=19285663~p=1~adgrpid=19285663#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=66673~eid=479ba979-3284-4924-8e63-3e7e3f727ac1~srvts=1727894118139~collid=83637",
-              "sla": {
-                "deliveryTime": 35,
-                "lastMileTravel": 8.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "8.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2024-10-03 12:00:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "Green%20Dot%20Awards/Best%20In%20Desserts.png",
-                    "description": "Delivery!"
-                  },
-                  {
-                    "imageId": "Rxawards/_CATEGORY-Desserts.png",
-                    "description": "Delivery!"
-                  },
-                  {
-                    "imageId": "newg.png",
-                    "description": "Gourmet"
-                  },
-                  {
-                    "imageId": "v1695133679/badges/Pure_Veg111.png",
-                    "description": "pureveg"
-                  }
-                ]
-              },
-              "isOpen": true,
-              "aggregatedDiscountInfoV2": {
-                
-              },
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "description": "Delivery!",
-                          "imageId": "Green%20Dot%20Awards/Best%20In%20Desserts.png"
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹50 OFF",
+                        "subHeader": "ABOVE ₹199",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
                         }
                       },
-                      {
-                        "attributes": {
-                          "description": "Delivery!",
-                          "imageId": "Rxawards/_CATEGORY-Desserts.png"
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
                         }
                       },
-                      {
-                        "attributes": {
-                          "description": "Gourmet",
-                          "imageId": "newg.png"
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/mahaveer-restaurant-asifganj-sadar-thana-rest539218",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "208482",
+                      "name": "Hotel Golden Fortune(Silver Spoon)",
+                      "cloudinaryImageId": "rykgqvyrhp9qeetoem4f",
+                      "locality": "Civil Lines",
+                      "areaName": "Azamgarh Locality",
+                      "costForTwo": "₹300 for two",
+                      "cuisines": [
+                        "Chinese",
+                        "Pizzas",
+                        "Beverages",
+                        "Mughlai",
+                        "Fast Food"
+                      ],
+                      "avgRating": 4.3,
+                      "parentId": "472584",
+                      "avgRatingString": "4.3",
+                      "totalRatingsString": "5.1K+",
+                      "sla": {
+                        "deliveryTime": 35,
+                        "lastMileTravel": 2.5,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "30-35 mins",
+                        "lastMileTravelString": "2.5 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:30:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png",
+                            "description": "OnlyOnSwiggy"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "OnlyOnSwiggy",
+                                  "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
                         }
                       },
-                      {
-                        "attributes": {
-                          "description": "pureveg",
-                          "imageId": "v1695133679/badges/Pure_Veg111.png"
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹125 OFF",
+                        "subHeader": "ABOVE ₹199",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
                         }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {
-                    
-                  },
-                  "textBased": {
-                    
-                  }
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {
-                  
-                },
-                "subTitle": {
-                  
-                },
-                "message": {
-                  
-                },
-                "customIcon": {
-                  
-                }
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {
-                    
-                  },
-                  "video": {
-                    
-                  }
-                }
-              },
-              "reviewsSummary": {
-                
-              },
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {
-                
-              },
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "4.3",
-                  "ratingCount": "9.2K+"
-                },
-                "source": "GOOGLE",
-                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-              "campaignId": "19285663"
-            },
-            "analytics": {
-              
-            },
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=66673&source=collection&query=Burger",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-    },
-    {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "231204",
-              "name": "Burger King",
-              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/c3b37a65-3b1e-4203-a759-f1d2c828dcf9_231204.jpg",
-              "locality": "Hazratganj",
-              "areaName": "Hazratganj",
-              "costForTwo": "₹350 for two",
-              "cuisines": [
-                "Burgers",
-                "American"
-              ],
-              "avgRating": 4.4,
-              "parentId": "166",
-              "avgRatingString": "4.4",
-              "totalRatingsString": "25K+",
-              "sla": {
-                "deliveryTime": 19,
-                "lastMileTravel": 0.2,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15-20 mins",
-                "lastMileTravelString": "0.2 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2024-10-03 05:00:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Burger.png",
-                    "description": "Delivery!"
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/hotel-golden-fortune-silver-spoon-civil-lines-azamgarh-locality-rest208482",
+                      "type": "WEBLINK"
+                    }
                   },
                   {
-                    "imageId": "Rxawards/_CATEGORY-Burger.png",
-                    "description": "Delivery!"
+                    "info": {
+                      "id": "208474",
+                      "name": "Ujala Restaurant",
+                      "cloudinaryImageId": "vjvsecf55d2uk6xvxiqw",
+                      "locality": "Bus Terminal Road",
+                      "areaName": "Civil Lines",
+                      "costForTwo": "₹200 for two",
+                      "cuisines": [
+                        "North Indian"
+                      ],
+                      "avgRating": 4.1,
+                      "parentId": "219126",
+                      "avgRatingString": "4.1",
+                      "totalRatingsString": "2.4K+",
+                      "sla": {
+                        "deliveryTime": 22,
+                        "lastMileTravel": 2.5,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "20-25 mins",
+                        "lastMileTravelString": "2.5 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹125 OFF",
+                        "subHeader": "ABOVE ₹199",
+                        "discountTag": "FLAT DEAL",
+                        "discountCalloutInfo": {
+                          "message": "Free Delivery",
+                          "logoCtx": {
+                            "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+                          }
+                        }
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/ujala-restaurant-bus-terminal-road-civil-lines-rest208474",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "208480",
+                      "name": "Gupta Bakery",
+                      "cloudinaryImageId": "xrwyxrmdb6b3jyup0vhw",
+                      "locality": "Raidopur",
+                      "areaName": "Azamgarh",
+                      "costForTwo": "₹150 for two",
+                      "cuisines": [
+                        "Bakery"
+                      ],
+                      "avgRating": 4.1,
+                      "veg": true,
+                      "parentId": "91625",
+                      "avgRatingString": "4.1",
+                      "totalRatingsString": "1.1K+",
+                      "sla": {
+                        "deliveryTime": 25,
+                        "lastMileTravel": 2.3,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "25-30 mins",
+                        "lastMileTravelString": "2.3 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 23:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "40% OFF",
+                        "subHeader": "UPTO ₹80"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/gupta-bakery-raidopur-azamgarh-rest208480",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "723198",
+                      "name": "Pind Balluchi Express,",
+                      "cloudinaryImageId": "a2f0991e6d2c3c0c6e39e18430f2ac50",
+                      "locality": "Civil Line",
+                      "areaName": "Raidopur",
+                      "costForTwo": "₹400 for two",
+                      "cuisines": [
+                        "Mughlai",
+                        "North Indian",
+                        "Chinese",
+                        "Biryani"
+                      ],
+                      "avgRating": 4.2,
+                      "parentId": "430186",
+                      "avgRatingString": "4.2",
+                      "totalRatingsString": "483",
+                      "sla": {
+                        "deliveryTime": 20,
+                        "lastMileTravel": 2,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "20-25 mins",
+                        "lastMileTravelString": "2.0 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:45:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹125 OFF",
+                        "subHeader": "ABOVE ₹349",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/pind-balluchi-express-civil-line-raidopur-rest723198",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "208472",
+                      "name": "Hotel Green Palace",
+                      "cloudinaryImageId": "eenbdvb7g4hh6zj9o6sm",
+                      "locality": "Bus Terminal Road",
+                      "areaName": "Civil Lines",
+                      "costForTwo": "₹200 for two",
+                      "cuisines": [
+                        "North Indian"
+                      ],
+                      "avgRating": 4.1,
+                      "parentId": "99185",
+                      "avgRatingString": "4.1",
+                      "totalRatingsString": "1.7K+",
+                      "sla": {
+                        "deliveryTime": 22,
+                        "lastMileTravel": 2.5,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "20-25 mins",
+                        "lastMileTravelString": "2.5 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹125 OFF",
+                        "subHeader": "ABOVE ₹199",
+                        "discountTag": "FLAT DEAL",
+                        "discountCalloutInfo": {
+                          "message": "Free Delivery",
+                          "logoCtx": {
+                            "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+                          }
+                        }
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/hotel-green-palace-bus-terminal-road-civil-lines-rest208472",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "208462",
+                      "name": "Hotel Grand S.R",
+                      "cloudinaryImageId": "xhsus3nhgqyzrl2bdppo",
+                      "locality": "P Dindayal Upadhyaya Marg",
+                      "areaName": "Sikhpur",
+                      "costForTwo": "₹150 for two",
+                      "cuisines": [
+                        "North Indian",
+                        "Indian"
+                      ],
+                      "avgRating": 3.9,
+                      "parentId": "99163",
+                      "avgRatingString": "3.9",
+                      "totalRatingsString": "1.2K+",
+                      "sla": {
+                        "deliveryTime": 28,
+                        "lastMileTravel": 2.8,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "25-30 mins",
+                        "lastMileTravelString": "2.8 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:30:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png",
+                            "description": "OnlyOnSwiggy"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "OnlyOnSwiggy",
+                                  "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "10% OFF",
+                        "subHeader": "UPTO ₹40"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/hotel-grand-s-r-p-dindayal-upadhyaya-marg-sikhpur-rest208462",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "208484",
+                      "name": "Hotel Deep Continental",
+                      "cloudinaryImageId": "dcduvjn3cbo35wdth5ly",
+                      "locality": "Raidopur",
+                      "areaName": "Civil Lines",
+                      "costForTwo": "₹250 for two",
+                      "cuisines": [
+                        "North Indian"
+                      ],
+                      "avgRating": 4.2,
+                      "parentId": "98727",
+                      "avgRatingString": "4.2",
+                      "totalRatingsString": "3.1K+",
+                      "sla": {
+                        "deliveryTime": 35,
+                        "lastMileTravel": 3,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "30-35 mins",
+                        "lastMileTravelString": "3.0 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "10% OFF",
+                        "subHeader": "ABOVE ₹699",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/hotel-deep-continental-raidopur-civil-lines-rest208484",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "334653",
+                      "name": "Food & Flavour Restaurant",
+                      "cloudinaryImageId": "uad3ea8mdhljeyhooxts",
+                      "locality": "Raidopur Colony",
+                      "areaName": "Sikhpur",
+                      "costForTwo": "₹250 for two",
+                      "cuisines": [
+                        "North Indian",
+                        "Biryani",
+                        "Italian-American",
+                        "Chinese",
+                        "Snacks"
+                      ],
+                      "avgRating": 4.2,
+                      "parentId": "80830",
+                      "avgRatingString": "4.2",
+                      "totalRatingsString": "862",
+                      "sla": {
+                        "deliveryTime": 32,
+                        "lastMileTravel": 2.3,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "30-35 mins",
+                        "lastMileTravelString": "2.3 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 21:45:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "40% OFF",
+                        "subHeader": "UPTO ₹80"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/food-and-flavour-restaurant-raidopur-colony-sikhpur-rest334653",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "370717",
+                      "name": "New Pizza Samrat",
+                      "cloudinaryImageId": "xayod1bqgb46dyee7pno",
+                      "areaName": "Azamgarh Locality",
+                      "costForTwo": "₹200 for two",
+                      "cuisines": [
+                        "Pizzas",
+                        "Fast Food",
+                        "Beverages",
+                        "Italian",
+                        "Indian",
+                        "Snacks"
+                      ],
+                      "avgRating": 4.4,
+                      "parentId": "147530",
+                      "avgRatingString": "4.4",
+                      "totalRatingsString": "3.8K+",
+                      "sla": {
+                        "deliveryTime": 48,
+                        "lastMileTravel": 6.7,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "45-50 mins",
+                        "lastMileTravelString": "6.7 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "50% OFF",
+                        "subHeader": "UPTO ₹100"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/new-pizza-samrat-azamgarh-locality-rest370717",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "510149",
+                      "name": "New Famous Bakery",
+                      "cloudinaryImageId": "hy3xvbnbfztwj4skh0ar",
+                      "locality": "Sidhari",
+                      "areaName": "Raidopur",
+                      "costForTwo": "₹250 for two",
+                      "cuisines": [
+                        "Cakes and Pastries",
+                        "Bakery"
+                      ],
+                      "avgRating": 4.1,
+                      "veg": true,
+                      "parentId": "146461",
+                      "avgRatingString": "4.1",
+                      "totalRatingsString": "446",
+                      "sla": {
+                        "deliveryTime": 28,
+                        "lastMileTravel": 3.9,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "25-30 mins",
+                        "lastMileTravelString": "3.9 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "40% OFF",
+                        "subHeader": "UPTO ₹80"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/new-famous-bakery-sidhari-raidopur-rest510149",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "370992",
+                      "name": "Gourmet Ice Cream Cakes by Baskin Robbins",
+                      "cloudinaryImageId": "d679c532ca07a6f3fd6d89d603861412",
+                      "locality": "Raidopur Colony",
+                      "areaName": "Azamgarh",
+                      "costForTwo": "₹250 for two",
+                      "cuisines": [
+                        "Desserts",
+                        "Ice Cream",
+                        "Bakery"
+                      ],
+                      "avgRating": 5,
+                      "veg": true,
+                      "parentId": "21932",
+                      "avgRatingString": "5.0",
+                      "totalRatingsString": "4",
+                      "sla": {
+                        "deliveryTime": 19,
+                        "lastMileTravel": 2.4,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "15-20 mins",
+                        "lastMileTravelString": "2.4 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 23:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "50% OFF",
+                        "subHeader": "UPTO ₹80"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/gourmet-ice-cream-cakes-by-baskin-robbins-raidopur-colony-azamgarh-rest370992",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "579173",
+                      "name": "Paliwal Restaurant",
+                      "cloudinaryImageId": "gz8nuviv12fqmu2i5snl",
+                      "locality": "Raidopur",
+                      "areaName": "Azamgarh Locality",
+                      "costForTwo": "₹200 for two",
+                      "cuisines": [
+                        "Chinese",
+                        "North Indian",
+                        "Snacks",
+                        "Burgers",
+                        "Beverages"
+                      ],
+                      "avgRating": 4.2,
+                      "parentId": "349421",
+                      "avgRatingString": "4.2",
+                      "totalRatingsString": "771",
+                      "sla": {
+                        "deliveryTime": 33,
+                        "lastMileTravel": 4.4,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "30-35 mins",
+                        "lastMileTravelString": "4.4 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "aggregatedDiscountInfoV2": {
+                        
+                      },
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/paliwal-restaurant-raidopur-azamgarh-locality-rest579173",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "209494",
+                      "name": "Plating Perfect - A Fine Dine Luxary",
+                      "cloudinaryImageId": "yaz6hf2z0wgcugee6bru",
+                      "locality": "Bypass Road",
+                      "areaName": "Azamatpur Kodur",
+                      "costForTwo": "₹250 for two",
+                      "cuisines": [
+                        "North Indian",
+                        "South Indian",
+                        "Chinese",
+                        "Italian"
+                      ],
+                      "avgRating": 3.8,
+                      "parentId": "159422",
+                      "avgRatingString": "3.8",
+                      "totalRatingsString": "475",
+                      "sla": {
+                        "deliveryTime": 21,
+                        "lastMileTravel": 1.5,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "20-25 mins",
+                        "lastMileTravelString": "1.5 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "50% OFF",
+                        "subHeader": "UPTO ₹100"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/plating-perfect-a-fine-dine-luxary-bypass-road-azamatpur-kodur-rest209494",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "258911",
+                      "name": "Baskin Robbins - Ice Cream Desserts",
+                      "cloudinaryImageId": "85ccae4e3576f9330af102c46ca85395",
+                      "locality": "Raidopur Colony",
+                      "areaName": "Raidopur",
+                      "costForTwo": "₹250 for two",
+                      "cuisines": [
+                        "Desserts",
+                        "Ice Cream"
+                      ],
+                      "avgRating": 4.3,
+                      "veg": true,
+                      "parentId": "5588",
+                      "avgRatingString": "4.3",
+                      "totalRatingsString": "253",
+                      "sla": {
+                        "deliveryTime": 17,
+                        "lastMileTravel": 2.4,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "15-20 mins",
+                        "lastMileTravelString": "2.4 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 23:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "40% OFF",
+                        "subHeader": "UPTO ₹80"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/baskin-robbins-ice-cream-desserts-colony-raidopur-rest258911",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "490457",
+                      "name": "La Pino'z Pizza",
+                      "cloudinaryImageId": "bxsyqmcucblfndjwpuq3",
+                      "locality": "Npp Mubarakpur",
+                      "areaName": "Raidopur",
+                      "costForTwo": "₹250 for two",
+                      "cuisines": [
+                        "Pizzas",
+                        "Pastas",
+                        "Italian",
+                        "Desserts",
+                        "Beverages"
+                      ],
+                      "avgRating": 4.2,
+                      "parentId": "4961",
+                      "avgRatingString": "4.2",
+                      "totalRatingsString": "5.0K+",
+                      "sla": {
+                        "deliveryTime": 20,
+                        "lastMileTravel": 2.1,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "15-20 mins",
+                        "lastMileTravelString": "2.1 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:45:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹100 OFF",
+                        "subHeader": "ABOVE ₹349",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/la-pinoz-pizza-npp-mubarakpur-raidopur-rest490457",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "690819",
+                      "name": "Kwality Walls Ice Cream and More",
+                      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/a510db8e-ef0a-48ca-b06d-5a39fe2943df_690819.JPG",
+                      "locality": "Mukeriganj",
+                      "areaName": "Raidopur",
+                      "costForTwo": "₹200 for two",
+                      "cuisines": [
+                        "Desserts",
+                        "Ice Cream",
+                        "Ice Cream Cakes"
+                      ],
+                      "avgRating": 4.4,
+                      "veg": true,
+                      "parentId": "582",
+                      "avgRatingString": "4.4",
+                      "totalRatingsString": "491",
+                      "sla": {
+                        "deliveryTime": 16,
+                        "lastMileTravel": 0.7,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "15-20 mins",
+                        "lastMileTravelString": "0.7 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:45:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹100 OFF",
+                        "subHeader": "ABOVE ₹349",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/kwality-walls-ice-cream-and-more-mukeriganj-raidopur-rest690819",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "707769",
+                      "name": "Gianis - Ice Cream, Shakes & Sundaes",
+                      "cloudinaryImageId": "2365e2117e199c2b9a2cfa643c31b05c",
+                      "locality": "Azamgarh",
+                      "areaName": "Raidopur",
+                      "costForTwo": "₹500 for two",
+                      "cuisines": [
+                        "Indian",
+                        "Beverages",
+                        "Ice Cream"
+                      ],
+                      "avgRating": 4.2,
+                      "veg": true,
+                      "parentId": "427371",
+                      "avgRatingString": "4.2",
+                      "totalRatingsString": "128",
+                      "sla": {
+                        "deliveryTime": 22,
+                        "lastMileTravel": 2.1,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "20-25 mins",
+                        "lastMileTravelString": "2.1 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 23:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "aggregatedDiscountInfoV2": {
+                        
+                      },
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/gianis-ice-cream-shakes-and-sundaes-raidopur-rest707769",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "208458",
+                      "name": "Grill 2 Chill Cafe Lounge Restaurant",
+                      "cloudinaryImageId": "vovkay4vhcynno7kwu5z",
+                      "locality": "ECIL",
+                      "areaName": "ECIL",
+                      "costForTwo": "₹150 for two",
+                      "cuisines": [
+                        "Chinese"
+                      ],
+                      "avgRating": 3.5,
+                      "parentId": "90582",
+                      "avgRatingString": "3.5",
+                      "totalRatingsString": "743",
+                      "sla": {
+                        "deliveryTime": 23,
+                        "lastMileTravel": 3,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "20-25 mins",
+                        "lastMileTravelString": "3.0 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "20% OFF",
+                        "subHeader": "UPTO ₹50"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "3.8",
+                          "ratingCount": "1.0K+"
+                        },
+                        "source": "GOOGLE",
+                        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/grill-2-chill-cafe-lounge-restaurant-ecil-rest208458",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "629540",
+                      "name": "AL-Baik.Com",
+                      "cloudinaryImageId": "dsqfxxuhfuy2wwpxjezm",
+                      "locality": "Jamalpur",
+                      "areaName": "Raidopur",
+                      "costForTwo": "₹300 for two",
+                      "cuisines": [
+                        "Snacks",
+                        "Fast Food",
+                        "Pizzas",
+                        "Biryani"
+                      ],
+                      "avgRating": 4.3,
+                      "parentId": "6315",
+                      "avgRatingString": "4.3",
+                      "totalRatingsString": "136",
+                      "sla": {
+                        "deliveryTime": 42,
+                        "lastMileTravel": 6.6,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "40-45 mins",
+                        "lastMileTravelString": "6.6 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2024-10-03 21:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png",
+                            "description": "OnlyOnSwiggy"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "OnlyOnSwiggy",
+                                  "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "30% OFF",
+                        "subHeader": "UPTO ₹75"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      },
+                      "externalRatings": {
+                        "aggregatedRating": {
+                          "rating": "--"
+                        }
+                      },
+                      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/city/azamgarh/al-baik-com-jamalpur-raidopur-rest629540",
+                      "type": "WEBLINK"
+                    }
                   }
                 ]
-              },
-              "isOpen": true,
-              "aggregatedDiscountInfoV2": {
-                
-              },
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textBased": {
-                    
-                  },
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Burger.png",
-                          "description": "Delivery!"
-                        }
-                      },
-                      {
-                        "attributes": {
-                          "description": "Delivery!",
-                          "imageId": "Rxawards/_CATEGORY-Burger.png"
-                        }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {
-                    
-                  }
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {
-                  
-                },
-                "subTitle": {
-                  
-                },
-                "message": {
-                  
-                },
-                "customIcon": {
-                  
-                }
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {
-                    
-                  },
-                  "video": {
-                    
-                  }
-                }
-              },
-              "reviewsSummary": {
-                
-              },
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {
-                
-              },
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "4.5",
-                  "ratingCount": "2.8K+"
-                },
-                "source": "GOOGLE",
-                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-              
-            },
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=231204&source=collection&query=Burger",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-    },
-    {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "877829",
-              "name": "Lord Petrick",
-              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/25/0f2b29cf-8cab-4218-b2a5-5f3a782a33d0_c5f5ef70-0cee-4290-b531-01678b55cedf.png",
-              "locality": "SAPRU MARG",
-              "areaName": "Hazratganj",
-              "costForTwo": "₹300 for two",
-              "cuisines": [
-                "Burgers",
-                "Snacks",
-                "Italian",
-                "Desserts",
-                "Beverages"
-              ],
-              "avgRating": 4.4,
-              "parentId": "429673",
-              "avgRatingString": "4.4",
-              "totalRatingsString": "551",
-              "sla": {
-                "deliveryTime": 18,
-                "lastMileTravel": 0.9,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15-20 mins",
-                "lastMileTravelString": "0.9 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2024-10-03 03:30:00",
-                "opened": true
-              },
-              "badges": {
-                
-              },
-              "isOpen": true,
-              "aggregatedDiscountInfoV2": {
-                "header": "40% OFF",
-                "shortDescriptionList": [
-                  {
-                    "meta": "Use TRYNEW",
-                    "discountType": "Percentage",
-                    "operationType": "RESTAURANT"
-                  }
-                ],
-                "descriptionList": [
-                  {
-                    "meta": "40% off up to ₹80 | Use code TRYNEW",
-                    "discountType": "Percentage",
-                    "operationType": "RESTAURANT"
-                  }
-                ]
-              },
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textExtendedBadges": {
-                    
-                  },
-                  "textBased": {
-                    
-                  },
-                  "imageBased": {
-                    
-                  }
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {
-                  
-                },
-                "subTitle": {
-                  
-                },
-                "message": {
-                  
-                },
-                "customIcon": {
-                  
-                }
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {
-                    
-                  },
-                  "video": {
-                    
-                  }
-                }
-              },
-              "reviewsSummary": {
-                
-              },
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "isNewlyOnboarded": true,
-              "restaurantOfferPresentationInfo": {
-                
-              },
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-              
-            },
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=877829&source=collection&query=Burger",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-    }
-]
 
 export default resList
