@@ -50,6 +50,19 @@ body {
     padding: 10px;
 }
 
+.filter-btn {
+    margin: 0 40px 10px 40px;
+}
+
+.filter-btn > button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 .res-container {
     display: flex;
     flex-wrap: wrap;
@@ -70,7 +83,7 @@ body {
 }
 
 .res-card h3, h4 {
-    margin: 0;
+    margin: 10px 0;
 }
 
 .res-logo {
