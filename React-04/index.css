@@ -50,11 +50,11 @@ body {
     padding: 10px;
 }
 
-.filter-btn {
+.filter {
     margin: 0 40px 10px 40px;
 }
 
-.filter-btn > button {
+.filter > .filter-btn {
     background-color: transparent;
     border: 1px solid black;
     padding: 8px;
