@@ -28,8 +28,18 @@ root.render(<AppLayout />)
 
 // There are two very important react hooks:
 // - useState() - Helps to generate super powerful variables in react.
-// - useEffect()
+// - useEffect() 
 
 // Whenever a state variable updates, react re-render the component.
 
 // React keeps the UI in sync with the data. In our data layer, when we have a local variable state, as soon as the data layer updates, our UI layer will update. E.g., as soon as the local state variable updates, React will re-render the component.
+
+// ------------------------------------------------------------------------------------------------------
+
+// Monolith architecture, we used to have one large project that contained smaller components, such as the API, UI, database, authentication, and notifications, all within the same project and written in a single tech stack.
+
+// Microservice architecture is the direction the world is moving towards. In this architecture, we have different services for different tasks, such as backend, UI, authentication, database, SMS sending, and email notifications. All these services combine to form a large application.
+
+// All these microservices communicate with each other depending on the use cases. We have separate back-end and UI projects, etc., and this is known as the separation of concerns and the single responsibility principle.
+
+// In microservices, we can have different tech stacks for different components. All these services run on their own specific ports, and these ports can be mapped to a domain name, like foodorderingapp.com/api. This way, all these APIs are deployed under the same URL.

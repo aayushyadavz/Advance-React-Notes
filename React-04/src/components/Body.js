@@ -1,9 +1,22 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import RestaurantCard from "./RestaurantCard"
-import resList from "../utils/mockData"
 
 const Body = () => {
-    const [ listOfRestaurants, setlistOfRestaurants ] = useState(resList)
+    const [ listOfRestaurants, setlistOfRestaurants ] = useState([])
+
+    useEffect(() => {
+        fetchData()
+    }, [])
+
+    const fetchData = async () => {
+        const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=26.0739138&lng=83.18594949999999&carousel=true&third_party_vendor=1")
+
+        const json = await data.json()
+
+        console.log(json);
+        setlistOfRestaurants(json.data.cards[4].card.card.gridElements.infoWithStyle.
+            restaurants)
+    }
 
     return (
         <div className="body">
@@ -49,3 +62,9 @@ export default Body
 // React only updates the parts of the real DOM that need to change, instead of reloading the entire UI. This makes the app faster and more efficient.
 
 // React repeats this process whenever the state variable updates. React keeps an eye on the state variable, and as soon as we call setListOfRestaurants, React identifies the difference and updates the UI.
+
+// -------------------------------------------------------------------------------------------------------
+
+// useEffect() - is a regular JavaScript function that takes two arguments: a callback function and a dependency array. The callback function inside useEffect is called after the component renders.
+
+// Here, Once we have rendered the body component, we will use useEffect.
