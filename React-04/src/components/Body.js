@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import RestaurantCard from "./RestaurantCard"
+import Shimmer from "./Shimmer"
 
 const Body = () => {
     const [ listOfRestaurants, setlistOfRestaurants ] = useState([])
@@ -9,13 +10,17 @@ const Body = () => {
     }, [])
 
     const fetchData = async () => {
-        const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=26.0739138&lng=83.18594949999999&carousel=true&third_party_vendor=1")
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.0739138&lng=83.18594949999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
 
         const json = await data.json()
 
         console.log(json);
-        setlistOfRestaurants(json.data.cards[4].card.card.gridElements.infoWithStyle.
+        setlistOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.
             restaurants)
+    }
+
+    if (listOfRestaurants.length === 0) {
+        return <Shimmer /> // Shimmer component rendered here inside the body
     }
 
     return (
@@ -68,3 +73,5 @@ export default Body
 // useEffect() - is a regular JavaScript function that takes two arguments: a callback function and a dependency array. The callback function inside useEffect is called after the component renders.
 
 // Here, Once we have rendered the body component, we will use useEffect.
+
+// The idea of a shimmer UI is to show something to the user very quickly as soon as our app loads. First, render the shimmer UI, then make an API call, and afterward, render it with the actual data.

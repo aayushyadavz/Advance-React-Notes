@@ -91,3 +91,19 @@ body {
     height: 150px;
     object-fit: cover;
 }
+
+/* styling for shimmer UI */
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 180px 40px 0;
+}
+
+.shimmer-card {
+    margin-bottom: 10px;
+    width: 210px;
+    height: 355px;
+    background-color: #f0f0f0;
+}
+/* ----------------------- */
