@@ -19,11 +19,11 @@ const RestaurantCard = (props) => { // Here, props is an object in itself
                 alt="res-logo"
                 src={CDN_URL + cloudinaryImageId }
             />
-            <h3>{name}</h3>
-            <h4>{cuisines.join(", ")}</h4> 
-            <h4>{avgRating} Stars</h4>
-            <h4>{costForTwo}</h4>
-            <h4>{deliveryTime} minutes</h4>
+            <div className="res-info">
+                <h3 className="res-name">{name}</h3>
+                <h4><span className="res-rating">{avgRating} Stars</span> • <span>{deliveryTime} mins</span></h4>
+                <h4 className="cuisines">{cuisines.join(", ")}</h4> 
+            </div>
         </div>
     )
 }

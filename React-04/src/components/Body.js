@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import RestaurantCard from "./RestaurantCard"
-import Shimmer from "./Shimmer"
+import mockData from "../utils/mockData"
 
 const Body = () => {
     const [ listOfRestaurants, setlistOfRestaurants ] = useState([])
@@ -11,14 +11,9 @@ const Body = () => {
         fetchData()
     }, [])
 
-    const fetchData = async () => {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.0739138&lng=83.18594949999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
-
-        const json = await data.json()
-
-        console.log(json);
-        setlistOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    const fetchData = () => {
+        setlistOfRestaurants(mockData[0].data.success.cards[3].gridWidget.gridElements.infoWithStyle.restaurants)
+        setFilteredRestaurants(mockData[0].data.success.cards[3].gridWidget.gridElements.infoWithStyle.restaurants)
     }
 
     return (
@@ -27,7 +22,7 @@ const Body = () => {
               <input 
                 type="text" 
                 className="search-input" 
-                placeholder="Search Food or Restaurant" 
+                placeholder="Search for restaurants and food" 
                 value={searchText} 
                 onChange={(e) => { setSearchText(e.target.value) }} 
               />
@@ -39,21 +34,21 @@ const Body = () => {
                       
                     setFilteredRestaurants(filteredRestaurants)
                 }}
-              >Search</button>
+              ><i className="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div className="filter">
                 <button 
                     className="filter-btn" 
                     onClick={() => {
                         const filteredList = listOfRestaurants.filter(
-                            (res) => res.info.avgRating > 4.2
+                            (res) => res.info.avgRating > 4                                        
                         )
-                        setlistOfRestaurants(filteredList)
+                        setFilteredRestaurants(filteredList)
                     }}  
                 >Top Rated Restaurants</button>
             </div>
             <div className="res-container">
-                { listOfRestaurants.length === 0 ? <Shimmer /> : filteredRestaurants.map( (restaurant) => (
+                { filteredRestaurants.map( (restaurant) => (
                     <RestaurantCard resData={restaurant} key={restaurant.info.id} /> 
                   )) 
                 }
