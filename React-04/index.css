@@ -25,7 +25,7 @@ body {
     font-size: 19px;
 }
 
-.nav-items > ul > li {
+.nav-items > ul > li, .btn-name {
     padding: 10px;
     margin: 10px;
 }
@@ -63,14 +63,14 @@ body {
     cursor: pointer;
 }
 
-.res-container {
+.res-container, .shimmer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 40px;
 }
 
-.res-container .res-card {
+.res-container .res-card, .shimmer-card {
     margin-bottom: 10px;
     padding: 5px;
     width: 200px;
@@ -94,16 +94,16 @@ body {
 
 /* styling for shimmer UI */
 .shimmer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 180px 40px 0;
+    margin: 0;
 }
 
 .shimmer-card {
-    margin-bottom: 10px;
-    width: 210px;
-    height: 355px;
-    background-color: #f0f0f0;
+    height: 346px;
 }
 /* ----------------------- */
+
+.btn-name {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+}
