@@ -11,25 +11,35 @@ const Body = () => {
         fetchData()
     }, [])
 
-    const fetchData = () => {
+    const fetchData = async () => {
         setlistOfRestaurants(mockData[0].data.success.cards[3].gridWidget.gridElements.infoWithStyle.restaurants)
         setFilteredRestaurants(mockData[0].data.success.cards[3].gridWidget.gridElements.infoWithStyle.restaurants)
+    }
+
+    const clearInputSearch = () => {
+        setSearchText("")
+        setFilteredRestaurants(listOfRestaurants)
     }
 
     return (
         <div className="body">
             <div className="search">
-              <input 
-                type="text" 
-                className="search-input" 
-                placeholder="Search for restaurants and food" 
-                value={searchText} 
-                onChange={(e) => { setSearchText(e.target.value) }} 
-              />
+                <div className="search-input-container">
+                    <input 
+                        type="text" 
+                        className="search-input" 
+                        placeholder="Search for restaurants and food" 
+                        value={searchText} 
+                        onChange={(e) => { 
+                            setSearchText(e.target.value) 
+                        }} 
+                    />
+                    { searchText && (<button className="clear-icon" onClick={clearInputSearch}>&times;</button>) }
+                </div>
               <button 
                 onClick={() => {
                     const filteredRestaurants = listOfRestaurants.filter((res) => (
-                        res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                        res.info.name.toLowerCase().includes(searchText.toLowerCase()) || res.info.cuisines.some(cuisines => cuisines.toLowerCase().includes(searchText.toLowerCase()))
                     ))
                       
                     setFilteredRestaurants(filteredRestaurants)

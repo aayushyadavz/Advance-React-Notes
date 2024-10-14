@@ -8,7 +8,6 @@ const RestaurantCard = (props) => { // Here, props is an object in itself
         cloudinaryImageId, 
         cuisines, 
         avgRating, 
-        costForTwo, 
         sla: {deliveryTime} 
     } = resData?.info // optional chaining operator
 
