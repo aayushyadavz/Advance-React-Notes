@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import RestaurantCard from "./RestaurantCard"
+import Shimmer from "./Shimmer"
 
 const Body = () => {
     const [ listOfRestaurants, setlistOfRestaurants ] = useState([])
@@ -11,7 +12,7 @@ const Body = () => {
     }, [])
 
     const fetchData = async () => {
-        const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.8466937&lng=80.94616599999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+        const response = await fetch("https://cors-anywhere.herokuapp.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
         const data = await response.json()
         setlistOfRestaurants(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
         setFilteredRestaurants(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
@@ -42,7 +43,6 @@ const Body = () => {
                     const filteredRestaurants = listOfRestaurants.filter((res) => (
                         res.info.name.toLowerCase().includes(searchText.toLowerCase()) || res.info.cuisines.some(cuisines => cuisines.toLowerCase().includes(searchText.toLowerCase()))
                     ))
-                      
                     setFilteredRestaurants(filteredRestaurants)
                 }}
               ><i className="fa-solid fa-magnifying-glass"></i></button>
@@ -58,12 +58,15 @@ const Body = () => {
                     }}  
                 >Top Rated Restaurants</button>
             </div>
-            <div className="res-container">
-                { filteredRestaurants.map( (restaurant) => (
-                    <RestaurantCard resData={restaurant} key={restaurant.info.id} /> 
-                  )) 
-                }
-            </div>
+            { filteredRestaurants.length === 0 ? (
+                    <div className="shim-container">
+                        {Array(10).fill("").map((_, index) => <Shimmer key={index} />)} 
+                    </div>
+                ) : <div className="res-container">{ filteredRestaurants.map( (restaurant) => (
+                        <RestaurantCard resData={restaurant} key={restaurant.info.id} /> 
+                    )) }
+                </div> 
+            }
         </div>
     )
 }

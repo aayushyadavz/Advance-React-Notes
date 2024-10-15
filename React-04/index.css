@@ -126,14 +126,14 @@
 }
 
 /* Restaurant Cards */
-.res-container {
+.res-container, .shim-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 40px;
 }
 
-.res-container .res-card {
+.res-container .res-card, .shim-card {
     margin-bottom: 15px;
     padding: 5px;
     width: 200px;
@@ -174,4 +174,11 @@
     -webkit-line-clamp: 2; /* Limit to 2 lines */
     -webkit-box-orient: vertical;
     line-height: 1.2;
+}
+
+/* Shimmer UI */
+.shim-card {
+    background-color: rgb(128, 128, 128, 0.2);
+    height: 246px;
+    border-radius: 25px;
 }
