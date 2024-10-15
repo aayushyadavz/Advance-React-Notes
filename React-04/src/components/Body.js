@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import RestaurantCard from "./RestaurantCard"
-import mockData from "../utils/mockData"
 
 const Body = () => {
     const [ listOfRestaurants, setlistOfRestaurants ] = useState([])
@@ -12,8 +11,10 @@ const Body = () => {
     }, [])
 
     const fetchData = async () => {
-        setlistOfRestaurants(mockData[0].data.success.cards[3].gridWidget.gridElements.infoWithStyle.restaurants)
-        setFilteredRestaurants(mockData[0].data.success.cards[3].gridWidget.gridElements.infoWithStyle.restaurants)
+        const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.8466937&lng=80.94616599999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+        const data = await response.json()
+        setlistOfRestaurants(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setFilteredRestaurants(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
     const clearInputSearch = () => {
