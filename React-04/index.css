@@ -51,6 +51,11 @@
     color: #FC8019;
 }
 
+.rout-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Button Name */
 .btn-name {
     background: transparent;
