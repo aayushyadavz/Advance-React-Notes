@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import RestaurantCard from "./RestaurantCard"
 import Shimmer from "./Shimmer"
+import { Link } from "react-router-dom"
 
 const Body = () => {
     const [ listOfRestaurants, setlistOfRestaurants ] = useState([])
@@ -63,7 +64,12 @@ const Body = () => {
                         {Array(10).fill("").map((_, index) => <Shimmer key={index} />)} 
                     </div>
                 ) : <div className="res-container">{ filteredRestaurants.map( (restaurant) => (
-                        <RestaurantCard resData={restaurant} key={restaurant.info.id} /> 
+                        <Link 
+                            className="res-card-link"
+                            to={"/menu/"+ restaurant.info.id} 
+                            key={restaurant.info.id}
+                            ><RestaurantCard resData={restaurant}/>
+                        </Link> 
                     )) }
                 </div> 
             }
@@ -120,3 +126,7 @@ export default Body
 // Even after filtering, listOfRestaurants still holds the full list, so if we search again, we can always filter from the complete data set.
 
 // After refreshing the page, the API fetches the full data again, and both listOfRestaurants and filteredRestaurants are re-populated, so the full list is shown by default.
+
+// -------------------------------------------------------------------------------------------------------
+
+// To make the cards clickable, we used the Link component provided by React Router DOM, which redirects to the specified path. The restaurant's ID is linked to the path dynamically.

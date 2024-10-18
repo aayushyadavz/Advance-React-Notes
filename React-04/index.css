@@ -7,7 +7,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 19px;
 }
 
 /* Common Styles */
@@ -47,6 +46,10 @@
     list-style-type: none;
 }
 
+.nav-items ul li {
+    font-size: 19px;
+}
+
 .nav-items ul li:hover, .btn-name:hover {
     color: #FC8019;
 }
@@ -60,6 +63,7 @@
 .btn-name {
     background: transparent;
     border: none;
+    font-size: 19px;
 }
 
 /* Search Section */
@@ -82,6 +86,7 @@
     width: 100%;
     border: 1px solid #97989f;
     border-radius: 3px;
+    font-size: 19px;
 }
 
 .search-input:focus {
@@ -160,6 +165,10 @@
     font-weight: 400;
 }
 
+.res-rating > span {
+    font-weight: bold;
+}
+
 .res-name {
     font-size: 21px;
     overflow: hidden;
@@ -167,6 +176,15 @@
     display: -webkit-box;
     -webkit-line-clamp: 1; /* Limit to 1 line */
     -webkit-box-orient: vertical;
+}
+
+.res-info h4, span {
+    font-size: 19px;
+}
+
+.res-card-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Cuisine Info */
@@ -179,6 +197,7 @@
     -webkit-line-clamp: 2; /* Limit to 2 lines */
     -webkit-box-orient: vertical;
     line-height: 1.2;
+    font-size: 19px;
 }
 
 /* Shimmer UI */
@@ -186,4 +205,159 @@
     background-color: rgb(128, 128, 128, 0.2);
     height: 246px;
     border-radius: 25px;
+}
+
+/* Utility Classes */
+.padding-17 {
+    padding: 17px;
+}
+
+.color-main {
+    color: rgba(2, 6, 12, 0.75);
+}
+
+.font-weight-750 {
+    font-weight: 750;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+/* Restaurant Details */
+.res-detail-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.res-detail-card {
+    width: 63%;
+    margin-top: 60px;
+}
+
+.res-detail-card > h1 {
+    font-weight: 750;
+    font-size: 30px;
+    line-height: 28px;
+    padding: 0 15px;
+}
+
+.res-detail {
+    background-color: gray;
+    padding: 0 17px 17px;
+    border-radius: 0 0 35px 35px;
+    background: linear-gradient(rgb(255, 255, 255) -6.71%, rgb(235, 235, 242) 56.19%, rgb(223, 223, 231) 106.56%);
+    margin: 18px 0;
+}
+
+.res-detail > div {
+    background-color: white;
+    padding: 17px 17px 24px;
+    border-radius: 17px;
+}
+
+.res-cuisine {
+    color: rgb(255, 82, 0);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 4px 0 6px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.res-location {
+    font-weight: 750;
+    margin-bottom: 5px;
+}
+
+.area {
+    margin-left: 10px;
+    font-weight: 400;
+    color: rgba(2, 6, 12, 0.6);
+    font-size: 17px;
+}
+
+.dilivery-time {
+    font-weight: 750;
+}
+
+.menu-logo {
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgba(2, 6, 12, 0.6);
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+/* Accordion Container */
+.accordian-container {
+    margin-bottom: 10px;
+}
+
+.accordian-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 15px;
+}
+
+.accordion-content {
+    padding: 10px;
+}
+
+.accordian-title {
+    font-size: 22px;
+    font-weight: 750;
+}
+
+.accordian-icon i {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+/* Menu Container */
+.item-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 10px 15px;
+    align-items: center;
+    border-bottom: 1px solid rgba(2, 6, 12, 0.2);
+}
+
+.item-detail {
+    padding: 10px 0 40px;
+}
+
+.item-detail > h3 {
+    color: rgba(2, 6, 12, 0.75);
+    font-size: 22px;
+    font-weight: 750;
+}
+
+.item-img {
+    width: 156px;
+    max-height: 144px;
+    object-fit: cover;
+    border-radius: 10px; /* Combined with the other .item-img declaration */
+}
+
+.item-price {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.item-description {
+    color: rgba(2, 6, 12, 0.75);
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+    line-height: 1.2;
 }
