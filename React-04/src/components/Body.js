@@ -48,6 +48,7 @@ const Body = () => {
                 }}
               ><i className="fa-solid fa-magnifying-glass"></i></button>
             </div>
+            <h1 className="res-top-heading">Restaurants with online food delivery near you</h1>
             <div className="filter">
                 <button 
                     className="filter-btn" 

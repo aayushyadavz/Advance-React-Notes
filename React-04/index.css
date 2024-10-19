@@ -118,6 +118,13 @@
     color: #3D4152;
 }
 
+.res-top-heading {
+    margin: 20px 40px;
+    font-size: 27px;
+    font-weight: 750;
+    padding-left: 23px;
+}
+
 /* Filter Section */
 .filter {
     margin: 0 40px 20px 40px;

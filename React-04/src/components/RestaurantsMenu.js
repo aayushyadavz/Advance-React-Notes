@@ -3,17 +3,13 @@ import Shimmer from "./Shimmer"
 import { useParams } from "react-router-dom"
 import { MENU_URL } from "../utils/constants"
 import { REST_OF_MENU_URL } from "../utils/constants"
-import MenuCard from "./MenuCard"
-import { MENU_IMG_URL } from "../utils/constants"
+// import MenuCard from "./MenuCard"
+// import { MENU_IMG_URL } from "../utils/constants"
+import Accordian from "./Accordian"
 
 const RestaurantsMenu = () => {
     const [ resMenu, setResMenu ] = useState(null)
     const { resId } = useParams()
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleAccordion = () => {
-        setIsOpen(!isOpen);
-    }
     
     useEffect(() => {
         fetchMenu()
@@ -41,10 +37,7 @@ const RestaurantsMenu = () => {
         sla:{ minDeliveryTime, maxDeliveryTime } 
     } = resMenu?.cards[2]?.card?.card?.info
 
-    const { 
-        itemCards,
-        title
-    } = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
+    const { cards } = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR
 
     return (
         <div className="res-detail-container">
@@ -62,30 +55,14 @@ const RestaurantsMenu = () => {
                 <p className="menu-logo">- MENU -</p>
                 <hr></hr>
                 <div className="accordian-container">
-                    <div className="accordian-title-container" onClick={toggleAccordion}>
-                        <h3 className="accordian-title">{title}</h3>
-                        <div className="accordian-icon">
-                            {isOpen ? (
-                                <i className="fa-solid fa-angle-up"></i>
-                            ) : (
-                                <i className="fa-solid fa-angle-down"></i>
-                            )}
-                        </div>
-                    </div>
-
-                    {/* Only render content if the accordion is open */}
-                    {isOpen && (   
-                        <div>
-                            {itemCards.map((item, index) => (
-                                <MenuCard 
-                                    key={index} 
-                                    name={item.card.info.name} 
-                                    price={item.card.info.price / 100 || item.card.info.defaultPrice / 100} 
-                                    description={item.card.info.description} imageUrl={MENU_IMG_URL + item.card.info.imageId}
-                                />
-                            ))}
-                        </div>
-                    )}
+                    { cards.map((cardData, index) => ( 
+                            cardData.card.card.itemCards && <Accordian 
+                                key={index} 
+                                accorTitle={cardData.card.card.title}
+                                itemCard={cardData.card.card.itemCards}
+                            />
+                        )) 
+                    }
                 </div>
             </div>
         </div>
