@@ -1,7 +1,17 @@
 const Shimmer = () => {
     return (
-        <div className="shim-card"></div>
+        <div className="shim-card">
+            <p className="loading">LOADING...</p>
+        </div>
     )
 }
 
-export default Shimmer
+const ShimmerForMenu = () => {
+    return (
+        <div className="shimmer-menu">
+            <p className="loading">LOADING...</p>
+        </div>
+    )
+}
+
+export { Shimmer, ShimmerForMenu }

@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react"
-import Shimmer from "./Shimmer"
+import {ShimmerForMenu} from "./Shimmer"
 import { useParams } from "react-router-dom"
 import { MENU_URL } from "../utils/constants"
 import { REST_OF_MENU_URL } from "../utils/constants"
-// import MenuCard from "./MenuCard"
-// import { MENU_IMG_URL } from "../utils/constants"
 import Accordian from "./Accordian"
 
 const RestaurantsMenu = () => {
@@ -25,7 +23,11 @@ const RestaurantsMenu = () => {
 
     // If resMenu is null then load Shimmer compo.
     if (resMenu === null) {
-        return <Shimmer />
+        return (
+            <div className="shim-menu-container">
+                {Array(10).fill("").map((_, index) => <ShimmerForMenu key={index}/>)}
+            </div>
+        )
     }
 
     // De-Structuring

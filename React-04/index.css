@@ -207,13 +207,6 @@
     font-size: 19px;
 }
 
-/* Shimmer UI */
-.shim-card {
-    background-color: rgb(128, 128, 128, 0.2);
-    height: 246px;
-    border-radius: 25px;
-}
-
 /* Utility Classes */
 .padding-17 {
     padding: 17px;
@@ -289,7 +282,7 @@
     font-weight: 750;
 }
 
-.menu-logo {
+.menu-logo, .loading {
     letter-spacing: 2px;
     font-weight: 500;
     color: rgba(2, 6, 12, 0.6);
@@ -367,4 +360,31 @@
     -webkit-box-orient: vertical;
     cursor: pointer;
     line-height: 1.2;
+}
+
+/* Shimmer UI */
+.shim-card, .shimmer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 128, 128, 0.2);
+    height: 246px;
+    border-radius: 25px;
+}
+
+.shim-menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shimmer-menu {
+    height: 50px;
+    width: 60%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.loading {
+    margin: 0;
 }

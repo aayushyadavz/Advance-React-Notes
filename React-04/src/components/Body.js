@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import RestaurantCard from "./RestaurantCard"
-import Shimmer from "./Shimmer"
+import { Shimmer } from "./Shimmer"
 import { Link } from "react-router-dom"
 
 const Body = () => {
