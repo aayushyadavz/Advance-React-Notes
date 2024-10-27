@@ -64,13 +64,13 @@ const Body = () => {
                     <div className="shim-container">
                         {Array(10).fill("").map((_, index) => <Shimmer key={index} />)} 
                     </div>
-                ) : <div className="res-container">{ filteredRestaurants.map( (restaurant) => (
+                ) : <div className="res-container">{ filteredRestaurants.map( (restaurant) => (                       
                         <Link 
                             className="res-card-link"
                             to={"/menu/"+ restaurant.info.id} 
                             key={restaurant.info.id}
                             ><RestaurantCard resData={restaurant}/>
-                        </Link> 
+                        </Link>                        
                     )) }
                 </div> 
             }

@@ -388,3 +388,9 @@
 .loading {
     margin: 0;
 }
+
+/* Class */
+.user {
+    border: 1px solid black;
+    padding: 10px;
+}
