@@ -1,25 +1,12 @@
-import { useEffect, useState } from "react"
 import {ShimmerForMenu} from "./Shimmer"
 import { useParams } from "react-router-dom"
-import { MENU_URL } from "../utils/constants"
-import { REST_OF_MENU_URL } from "../utils/constants"
+
 import Accordian from "./Accordian"
+import useRestaurantsMenu from "../utils/useRestaurantsMenu"
 
 const RestaurantsMenu = () => {
-    const [ resMenu, setResMenu ] = useState(null)
     const { resId } = useParams()
-    
-    useEffect(() => {
-        fetchMenu()
-    }, [])
-
-    const fetchMenu = async () => {
-        const response = await fetch( MENU_URL + resId + REST_OF_MENU_URL) // Putting resId between the Api URL
-        const data = await response.json()
-        console.log(data);
-        
-        setResMenu(data.data)
-    }
+    const resMenu = useRestaurantsMenu(resId)
 
     // If resMenu is null then load Shimmer compo.
     if (resMenu === null) {
@@ -76,3 +63,11 @@ export default RestaurantsMenu
 // Notes:
 
 // To read the `resId` used in the route path, we can use a hook provided by React Router DOM, extracting `resId` from `useParams`.
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// Single Responsibility Principle
+
+// If we write our code in a modular fashion, following the Single Responsibility Principle, it becomes reusable, maintainable, and testable.
+
+// Here, the single responsibility of this component is to display the data, not to fetch it as well.

@@ -1,28 +1,18 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import RestaurantCard from "./RestaurantCard"
 import { Shimmer } from "./Shimmer"
 import { Link } from "react-router-dom"
+import useRestaurantsData from "../utils/useRestaurantsData"
 
 const Body = () => {
-    const [ listOfRestaurants, setlistOfRestaurants ] = useState([])
-    const [ filteredRestaurants, setFilteredRestaurants ] = useState([])
-    const [ searchText, setSearchText ] = useState("")
-
-    useEffect(() => {
-        fetchData()
-    }, [])
-
-    const fetchData = async () => {
-        const response = await fetch("https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
-        const data = await response.json()
-        setlistOfRestaurants(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        setFilteredRestaurants(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-    }
-
-    const clearInputSearch = () => {
-        setSearchText("")
-        setFilteredRestaurants(listOfRestaurants)
-    }
+    const { 
+        filteredRestaurants,
+        clearInputSearch,
+        searchText,
+        setSearchText,
+        filterTopRated,
+        filterRestaurants
+    } = useRestaurantsData()
 
     return (
         <div className="body">
@@ -40,24 +30,14 @@ const Body = () => {
                     { searchText && (<button className="clear-icon" onClick={clearInputSearch}>&times;</button>) }
                 </div>
               <button 
-                onClick={() => {
-                    const filteredRestaurants = listOfRestaurants.filter((res) => (
-                        res.info.name.toLowerCase().includes(searchText.toLowerCase()) || res.info.cuisines.some(cuisines => cuisines.toLowerCase().includes(searchText.toLowerCase()))
-                    ))
-                    setFilteredRestaurants(filteredRestaurants)
-                }}
+                onClick={filterRestaurants}
               ><i className="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <h1 className="res-top-heading">Restaurants with online food delivery near you</h1>
             <div className="filter">
                 <button 
                     className="filter-btn" 
-                    onClick={() => {
-                        const filteredList = listOfRestaurants.filter(
-                            (res) => res.info.avgRating > 4                                        
-                        )
-                        setFilteredRestaurants(filteredList)
-                    }}  
+                    onClick={filterTopRated}  
                 >Top Rated Restaurants</button>
             </div>
             { filteredRestaurants.length === 0 ? (
