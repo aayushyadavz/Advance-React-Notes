@@ -2,7 +2,8 @@ import React from "react"
 import RestaurantCard from "./RestaurantCard"
 import { Shimmer } from "./Shimmer"
 import { Link } from "react-router-dom"
-import useRestaurantsData from "../utils/useRestaurantsData"
+import useRestaurantsData from "../utils/coustomHooks/useRestaurantsData"
+import useOnlineStatus from "../utils/coustomHooks/useOnlineStatus"
 
 const Body = () => {
     const { 
@@ -13,6 +14,14 @@ const Body = () => {
         filterTopRated,
         filterRestaurants
     } = useRestaurantsData()
+
+    const onlineStatus = useOnlineStatus()
+
+    if (onlineStatus === false) {
+        return (
+            <h1>You are out of internet connection! Please turn on you network to see content of this site.</h1>
+        )
+    }
 
     return (
         <div className="body">

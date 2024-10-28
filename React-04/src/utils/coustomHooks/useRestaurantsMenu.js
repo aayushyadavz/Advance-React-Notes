@@ -1,7 +1,7 @@
 // Coustom Hook
 import { useState, useEffect } from "react"
-import { MENU_URL } from "../utils/constants"
-import { REST_OF_MENU_URL } from "../utils/constants"
+import { MENU_URL } from "../constants"
+import { REST_OF_MENU_URL } from "../constants"
 
 const useRestaurantsMenu = (resId) => {
     const [ resMenu, setResMenu ] = useState(null)
