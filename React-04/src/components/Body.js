@@ -12,7 +12,8 @@ const Body = () => {
         searchText,
         setSearchText,
         filterTopRated,
-        filterRestaurants
+        filterRestaurants,
+        isFiltered
     } = useRestaurantsData()
 
     const onlineStatus = useOnlineStatus()
@@ -45,6 +46,7 @@ const Body = () => {
             <h1 className="res-top-heading">Restaurants with online food delivery near you</h1>
             <div className="filter">
                 <button 
+                    style={ isFiltered ? { backgroundColor: "rgb(128, 128, 128, 0.2)" } : { backgroundColor: "transparent" } }
                     className="filter-btn" 
                     onClick={filterTopRated}  
                 >Top Rated Restaurants</button>

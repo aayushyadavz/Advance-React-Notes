@@ -1,8 +1,7 @@
 import {ShimmerForMenu} from "./Shimmer"
 import { useParams } from "react-router-dom"
-
 import Accordian from "./Accordian"
-import useRestaurantsMenu from "../utils/useRestaurantsMenu"
+import useRestaurantsMenu from "../utils/coustomHooks/useRestaurantsMenu"
 
 const RestaurantsMenu = () => {
     const { resId } = useParams()

@@ -5,6 +5,7 @@ const useRestaurantsData = () => {
     const [ listOfRestaurants, setlistOfRestaurants ] = useState([])
     const [ filteredRestaurants, setFilteredRestaurants ] = useState([])
     const [ searchText, setSearchText ] = useState("")
+    const [ isFiltered, setIsFiltered ] = useState(false)
 
     // data fetching
     useEffect(() => {
@@ -26,10 +27,16 @@ const useRestaurantsData = () => {
 
     // filter button top rated restaurants
     const filterTopRated = () => {
-        const filteredList = listOfRestaurants.filter(
-            (res) => res.info.avgRating > 4.5                                       
-        )
-        setFilteredRestaurants(filteredList)
+        if (isFiltered) {
+            setFilteredRestaurants(listOfRestaurants)
+            setIsFiltered(false)
+        } else {
+            const filteredList = listOfRestaurants.filter(
+                (res) => res.info.avgRating > 4.4                                      
+            )
+            setFilteredRestaurants(filteredList)
+            setIsFiltered(true)
+        }
     }
 
     // filter restaurants search
@@ -46,7 +53,8 @@ const useRestaurantsData = () => {
         searchText,
         setSearchText,
         filterTopRated,
-        filterRestaurants
+        filterRestaurants,
+        isFiltered
     }
 }
 
