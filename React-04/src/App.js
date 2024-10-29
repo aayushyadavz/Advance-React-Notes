@@ -1,4 +1,4 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import ReactDOM from "react-dom/client"
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 import RestaurantsMenu from "./components/RestaurantsMenu";
+
+const Grocery = lazy(() => import("./components/Grocery"))
 
 const AppLayout = () => {
     return (
@@ -33,6 +35,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/contact",
                 element: <Contact />
+            },
+            {
+                path: "/grocery",
+                element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
             },
             {
                 path: "/menu/:resId",
@@ -88,3 +94,11 @@ root.render(<RouterProvider router={appRouter} />)
 
 // Server-Side Routing: We make a network call, and a page is retrieved from the server.
 // Client-Side Routing: We do not make any network calls when navigating to different pages (as happens here).
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Parcel bundles all component files into a single JavaScript file in the dist folder, which grows as more components are added. This can slow down the app's initial load time, as everything must be rendered from one file.
+
+// To overcome this, there is a process called "chunking," also known as "code splitting" or "dynamic bundling." It means breaking our app into smaller chunks or bundles, which is useful in large-scale applications.
+
+// When our app bundle size increases, we can reduce it using techniques like code splitting, chunking, lazy loading, on-demand loading, and dynamic imports. These methods ensure that code is loaded only when requested, rather than all at once.
