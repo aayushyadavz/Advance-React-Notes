@@ -102,3 +102,13 @@ root.render(<RouterProvider router={appRouter} />)
 // To overcome this, there is a process called "chunking," also known as "code splitting" or "dynamic bundling." It means breaking our app into smaller chunks or bundles, which is useful in large-scale applications.
 
 // When our app bundle size increases, we can reduce it using techniques like code splitting, chunking, lazy loading, on-demand loading, and dynamic imports. These methods ensure that code is loaded only when requested, rather than all at once.
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Tailwind CSS -
+
+// When we run npx tailwind init, we are executing Tailwind CSS, which creates a tailwind.config.js file. This is the configuration file for our Tailwind CSS setup.
+
+// .postcssrc is a configuration file for PostCSS. The code inside it indicates that Parcel needs .postcssrc to read and understand Tailwind CSS.
+
+// The `content` attribute inside `tailwind.config.js` contains an array with file extensions. These are the extensions where we can use Tailwind CSS.
