@@ -12,16 +12,16 @@ const RestaurantCard = (props) => { // Here, props is an object in itself
     } = resData?.info // optional chaining operator
 
     return (
-        <div className="res-card">
+        <div className="w-52 p-1 mb-2">
             <img 
-                className="res-logo" 
+                className="h-36 w-full object-cover rounded-3xl shadow-md" 
                 alt="res-logo"
                 src={CDN_URL + cloudinaryImageId }
             />
-            <div className="res-info">
-                <h3 className="res-name">{name}</h3>
-                <h4 className="res-rating">{avgRating} Stars <span>• {deliveryTime} mins</span></h4>
-                <h4 className="cuisines">{cuisines.join(", ")}</h4> 
+            <div className="p-3">
+                <h3 className="text-xl font-bold overflow-ellipsis overflow-hidden whitespace-nowrap w-full">{name}</h3>
+                <h4 className="text-lg font-medium">{avgRating} Stars <span className="font-semibold">• {deliveryTime} mins</span></h4>
+                <h4 className="text-lg leading-tight text-gray-500">{cuisines.join(", ")}</h4> 
             </div>
         </div>
     )

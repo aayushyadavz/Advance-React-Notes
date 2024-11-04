@@ -25,46 +25,48 @@ const Body = () => {
     }
 
     return (
-        <div className="body">
-            <div className="search">
-                <div className="search-input-container">
-                    <input 
-                        type="text" 
-                        className="search-input" 
-                        placeholder="Search for restaurants and food" 
-                        value={searchText} 
-                        onChange={(e) => { 
-                            setSearchText(e.target.value) 
-                        }} 
-                    />
-                    { searchText && (<button className="clear-icon" onClick={clearInputSearch}>&times;</button>) }
-                </div>
-              <button 
-                onClick={filterRestaurants}
-              ><i className="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <h1 className="res-top-heading">Restaurants with online food delivery near you</h1>
-            <div className="filter">
-                <button 
-                    style={ isFiltered ? { backgroundColor: "rgb(128, 128, 128, 0.2)" } : { backgroundColor: "transparent" } }
-                    className="filter-btn" 
-                    onClick={filterTopRated}  
-                >Top Rated Restaurants</button>
-            </div>
-            { filteredRestaurants.length === 0 ? (
-                    <div className="shim-container">
-                        {Array(10).fill("").map((_, index) => <Shimmer key={index} />)} 
+        <div className="flex justify-center w-full">
+            <div className="w-[70%]">
+                <div className="flex my-11 mx-14">
+                    <div className="flex flex-1 border-solid border-2 border-gray-300 rounded-lg overflow-hidden">
+                        <input 
+                            type="text" 
+                            className="w-full py-2 px-4 focus:outline-none text-lg font-semibold" 
+                            placeholder="Search for restaurants and food" 
+                            value={searchText} 
+                            onChange={(e) => { 
+                                setSearchText(e.target.value) 
+                            }} 
+                        />
+                        { searchText && (<button className="bg-white text-gray-500 text-3xl pr-2 pb-1 font-semibold" onClick={clearInputSearch}>&times;</button>) }
                     </div>
-                ) : <div className="res-container">{ filteredRestaurants.map( (restaurant) => (                       
-                        <Link 
-                            className="res-card-link"
-                            to={"/menu/"+ restaurant.info.id} 
-                            key={restaurant.info.id}
-                            ><RestaurantCard resData={restaurant}/>
-                        </Link>                        
-                    )) }
-                </div> 
-            }
+                    <button 
+                        onClick={filterRestaurants}
+                    ><i className="fa-solid fa-magnifying-glass text-xl text-gray-500 ml-3 pt-1"></i></button>
+                </div>
+                <h1 className="text-3xl font-bold">Restaurants with online food delivery near you</h1>
+                <div className="mt-5 mb-8 font-medium text-sm">
+                    <button
+                        className={`border border-gray-400 p-2 rounded-full shadow-md ${isFiltered ? 'bg-gray-200' : 'bg-transparent'}`}
+                        onClick={filterTopRated}  
+                    >Top Rated Restaurants</button>
+                </div>
+                { filteredRestaurants.length === 0 ? (
+                        <div>
+                            {Array(10).fill("").map((_, index) => <Shimmer key={index} />)} 
+                        </div>
+                    ) : <div className="flex flex-wrap justify-between">
+                        { filteredRestaurants.map( (restaurant) => (                       
+                                <Link 
+                                    to={"/menu/"+ restaurant.info.id} 
+                                    key={restaurant.info.id}
+                                    ><RestaurantCard resData={restaurant}/>
+                                </Link>                        
+                            )) 
+                        }
+                    </div> 
+                }
+            </div>
         </div>
     )
 }

@@ -1,297 +1,9 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
-
-/* Global Styles */
-* {
-    font-family: "Afacad Flux", sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* Common Styles */
-.nav-items > ul > li, 
-.btn-name {
-    padding: 10px;
-    margin: 10px;
-    font-weight: 500;
-    cursor: pointer;
-    color: #3D4152;
-}
-
-/* Header Section */
-.header {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
-    padding: 0px 20px;
-}
-
-.header .logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.header .logo {
-    width: 105px;
-}
-
-.nav-items {
-    display: flex;
-    align-items: center;
-}
-
-.nav-items > ul {
-    display: flex;
-    list-style-type: none;
-}
-
-.nav-items ul li {
-    font-size: 19px;
-}
-
-.nav-items ul li:hover, .btn-name:hover {
-    color: #FC8019;
-}
-
-.rout-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Button Name */
-.btn-name {
-    background: transparent;
-    border: none;
-    font-size: 19px;
-}
-
-/* Search Section */
-.search {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 50px 0;
-}
-
-.search-input-container {
-    position: relative;
-    flex: 0.7;
-    max-width: 800px;
-}
-
-.search-input {
-    font-weight: 500;
-    padding: 10px 35px 10px 15px;
-    width: 100%;
-    border: 1px solid #97989f;
-    border-radius: 3px;
-    font-size: 19px;
-}
-
-.search-input:focus {
-    outline: none;
-}
-
-.clear-icon {
-    position: absolute;
-    right: 10px;
-    top: 47%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 32px;
-    cursor: pointer;
-    padding: 0;
-    line-height: 1;
-    color: #3D4152;
-}
-
-.search button {
-    background-color: transparent;
-    border: 0;
-}
-
-.search > button > i {
-    font-size: 20px;
-    cursor: pointer;
-    color: #3D4152;
-}
-
-.res-top-heading {
-    margin: 20px 40px;
-    font-size: 27px;
-    font-weight: 750;
-    padding-left: 23px;
-}
-
-/* Filter Section */
-.filter {
-    margin: 0 40px 20px 40px;
-    padding: 0 25px;
-}
-
-.filter > .filter-btn {
-    background-color: transparent;
-    border: 1px solid rgba(182, 184, 187, 0.9);
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: rgba(2, 6, 12, 0.04) 0px 2px 12px;
-}
-
-/* Restaurant Cards */
-.res-container, .shim-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 40px;
-}
-
-.res-container .res-card, .shim-card {
-    margin-bottom: 15px;
-    padding: 5px;
-    width: 200px;
-    cursor: pointer;
-}
-
-.res-logo {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 25px;
-}
-
-.res-info {
-    padding: 0 15px;
-}
-
-.res-rating {
-    font-weight: 400;
-}
-
-.res-rating > span {
-    font-weight: bold;
-}
-
-.res-name {
-    font-size: 21px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1; /* Limit to 1 line */
-    -webkit-box-orient: vertical;
-}
-
-.res-info h4, span {
-    font-size: 19px;
-}
-
-.res-card-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Cuisine Info */
-.cuisines {
-    color: rgba(2, 6, 12, 0.6);
-    font-weight: 400;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limit to 2 lines */
-    -webkit-box-orient: vertical;
-    line-height: 1.2;
-    font-size: 19px;
-}
-
-/* Utility Classes */
-.padding-17 {
-    padding: 17px;
-}
-
-.color-main {
-    color: rgba(2, 6, 12, 0.75);
-}
-
-.font-weight-750 {
-    font-weight: 750;
-}
-
-.font-weight-500 {
-    font-weight: 500;
-}
-
-/* Restaurant Details */
-.res-detail-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.res-detail-card {
-    width: 63%;
-    margin-top: 60px;
-}
-
-.res-detail-card > h1 {
-    font-weight: 750;
-    font-size: 30px;
-    line-height: 28px;
-    padding: 0 15px;
-}
-
-.res-detail {
-    background-color: gray;
-    padding: 0 17px 17px;
-    border-radius: 0 0 35px 35px;
-    background: linear-gradient(rgb(255, 255, 255) -6.71%, rgb(235, 235, 242) 56.19%, rgb(223, 223, 231) 106.56%);
-    margin: 18px 0;
-}
-
-.res-detail > div {
-    background-color: white;
-    padding: 17px 17px 24px;
-    border-radius: 17px;
-}
-
-.res-cuisine {
-    color: rgb(255, 82, 0);
-    font-weight: 700;
-    font-size: 18px;
-    margin: 4px 0 6px;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.res-location {
-    font-weight: 750;
-    margin-bottom: 5px;
-}
-
-.area {
-    margin-left: 10px;
-    font-weight: 400;
-    color: rgba(2, 6, 12, 0.6);
-    font-size: 17px;
-}
-
-.dilivery-time {
-    font-weight: 750;
-}
-
-.menu-logo, .loading {
-    letter-spacing: 2px;
-    font-weight: 500;
-    color: rgba(2, 6, 12, 0.6);
-    text-align: center;
-    margin: 30px 0 20px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Accordion Container */
-.accordian-container {
+/* .accordian-container {
     margin-bottom: 10px;
 }
 
@@ -315,10 +27,10 @@
 .accordian-icon i {
     font-size: 18px;
     padding-bottom: 5px;
-}
+} */
 
 /* Menu Container */
-.item-card {
+/* .item-card {
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -335,35 +47,35 @@
     color: rgba(2, 6, 12, 0.75);
     font-size: 22px;
     font-weight: 750;
-}
-
+} */
+/* 
 .item-img {
     width: 156px;
     max-height: 144px;
     object-fit: cover;
-    border-radius: 10px; /* Combined with the other .item-img declaration */
+    border-radius: 10px;
 }
 
 .item-price {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 18px;
-}
-
+} */
+/* 
 .item-description {
     color: rgba(2, 6, 12, 0.75);
     font-size: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical;
     cursor: pointer;
     line-height: 1.2;
-}
+} */
 
 /* Shimmer UI */
-.shim-card, .shimmer-menu {
+/* .shim-card, .shimmer-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -383,14 +95,14 @@
     width: 60%;
     border-radius: 10px;
     margin: 20px 0;
-}
+} */
 
-.loading {
+/* .loading {
     margin: 0;
-}
+} */
 
 /* Class */
-.user {
+/* .user {
     border: 1px solid black;
     padding: 10px;
-}
+} */

@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{html,js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Afacad Flux"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

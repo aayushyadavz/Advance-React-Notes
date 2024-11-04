@@ -28,29 +28,31 @@ const RestaurantsMenu = () => {
     const { cards } = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR
 
     return (
-        <div className="res-detail-container">
-            <div className="res-detail-card">
-                <h1>{name}</h1>
-                <div className="res-detail">
-                    <div>
-                        <h3>{avgRating} • {costForTwoMessage}</h3>
-                        <h4 className="res-cuisine">{cuisines.join(", ")}</h4>
-                        <h4 className="res-location">Outlet <span className="area">{areaName}</span></h4>
-                        <h4 className="dilivery-time">{minDeliveryTime}-{maxDeliveryTime} mins</h4>
+        <div className="flex justify-center w-full ">
+            <div className="w-[63%] mt-16">
+                <div>
+                    <h1 className="text-3xl font-bold pl-4">{name}</h1>
+                    <div className="p-4 rounded-br-3xl rounded-bl-3xl mt-4 mb-6" style={{background: "linear-gradient(rgb(255, 255, 255) -6.71%, rgb(235, 235, 242) 56.19%, rgb(223, 223, 231) 106.56%)"}}>
+                        <div className="bg-white px-4 py-5 rounded-2xl">
+                            <h3 className="text-xl font-bold">{avgRating} • {costForTwoMessage}</h3>
+                            <h4 className="text-orange-500 font-bold text-lg underline cursor-pointer">{cuisines.join(", ")}</h4>
+                            <h4 className="mb-1 font-bold">Outlet <span className="ml-2 text-base font-normal">{areaName}</span></h4>
+                            <h4 className="mb-1 font-bold">{minDeliveryTime}-{maxDeliveryTime} mins</h4>
+                        </div>
                     </div>
-                </div>
 
-                <p className="menu-logo">- MENU -</p>
-                <hr></hr>
-                <div className="accordian-container">
-                    { cards.map((cardData, index) => ( 
-                            cardData.card.card.itemCards && <Accordian 
-                                key={index} 
-                                accorTitle={cardData.card.card.title}
-                                itemCard={cardData.card.card.itemCards}
-                            />
-                        )) 
-                    }
+                    <p className="text-center tracking-[3px] mb-3 font-medium text-gray-500">- MENU -</p>
+                    <hr></hr>
+                    <div>
+                        { cards.map((cardData, index) => ( 
+                                cardData.card.card.itemCards && <Accordian 
+                                    key={index} 
+                                    accorTitle={cardData.card.card.title}
+                                    itemCard={cardData.card.card.itemCards}
+                                />
+                            )) 
+                        }
+                    </div>
                 </div>
             </div>
         </div>

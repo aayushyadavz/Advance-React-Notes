@@ -8,34 +8,37 @@ const Header = () => {
     const onlineStatus = useOnlineStatus()
 
     return (
-        <div className="header">
-            <div className="logo-container">
+        <div className="flex items-center justify-between px-5 shadow-lg">
+            <div>
                 <Link to="/"><img 
-                    className="logo" 
+                    className="w-24" 
                     src={LOGO_URL} 
                 /></Link>
             </div>
-            <div className="nav-items">
-                <ul>
-                    <li>
+            <div>
+                <ul className="flex font-semibold text-lg hover:cursor-pointer text-gray-600">
+                    <li className="px-3 hover:text-orange-500">
                         Online Status: { onlineStatus ? "🟢" : "🔴" }
                     </li>
-                    <li>
+                    <li className="px-3 hover:text-orange-500">
                         <Link to="/" className="rout-link">Home</Link>
                     </li>
-                    <li>
+                    <li className="px-3 hover:text-orange-500">
                         <Link to="/about" className="rout-link">About Us</Link>
                     </li>
-                    <li>
+                    <li className="px-3 hover:text-orange-500">
                         <Link to="/contact" className="rout-link">Contact Us</Link>
                     </li>
-                    <li>
+                    <li className="px-3 hover:text-orange-500">
                         <Link to="/grocery" className="rout-link">Grocery</Link>
                     </li>
-                    <li>Cart</li>
-                    <button className="btn-name" onClick={() => {
-                        btnName === "Login" ? setBtnName("Logout") : setBtnName("Login") 
-                    }}>{btnName}</button>
+                    <li className="px-3 hover:text-orange-500">Cart</li>
+                    <li className="px-3 hover:text-orange-500">
+                        <button onClick={() => {
+                            btnName === "Login" ? setBtnName("Logout") : setBtnName("Login") 
+                        }}>{btnName}</button>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
