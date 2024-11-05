@@ -11,9 +11,9 @@ const Accordian = (props) => {
 
     return (
         <div>
-            <div className="flex justify-between items-center cursor-pointer pt-5 px-4" onClick={toggleAccordion}>
+            <div className="flex justify-between cursor-pointer pt-5 px-4" onClick={toggleAccordion}>
                 <h3 className="text-2xl font-bold">{props.accorTitle}</h3>
-                <div className="accordian-icon">
+                <div>
                     {isOpen ? (
                         <i className="fa-solid fa-angle-up"></i>
                     ) : (

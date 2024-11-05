@@ -12,7 +12,7 @@ const RestaurantCard = (props) => { // Here, props is an object in itself
     } = resData?.info // optional chaining operator
 
     return (
-        <div className="w-52 p-1 mb-2">
+        <div className="w-52 p-1">
             <img 
                 className="h-36 w-full object-cover rounded-3xl shadow-md" 
                 alt="res-logo"
