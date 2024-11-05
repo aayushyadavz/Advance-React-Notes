@@ -7,6 +7,8 @@ const useRestaurantsData = () => {
     const [ searchText, setSearchText ] = useState("")
     const [ isFiltered, setIsFiltered ] = useState(false)
 
+    console.log(listOfRestaurants);
+    
     // data fetching
     useEffect(() => {
         fetchData()

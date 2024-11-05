@@ -1,5 +1,5 @@
 import React from "react"
-import RestaurantCard from "./RestaurantCard"
+import RestaurantCard, { withPriceLabel } from "./RestaurantCard"
 import {Shimmer} from "./Shimmer"
 import { Link } from "react-router-dom"
 import useRestaurantsData from "../utils/coustomHooks/useRestaurantsData"
@@ -17,6 +17,7 @@ const Body = () => {
     } = useRestaurantsData()
 
     const onlineStatus = useOnlineStatus()
+    const RestaurantCardPriceLabel = withPriceLabel(RestaurantCard)
 
     if (onlineStatus === false) {
         return (
@@ -60,7 +61,11 @@ const Body = () => {
                                 <Link 
                                     to={"/menu/"+ restaurant.info.id} 
                                     key={restaurant.info.id}
-                                    ><RestaurantCard resData={restaurant}/>
+                                    >
+                                    { restaurant.info.aggregatedDiscountInfoV3 ? 
+                                        <RestaurantCardPriceLabel resData={restaurant} /> : 
+                                        <RestaurantCard resData={restaurant} /> 
+                                    }
                                 </Link>                        
                             )) 
                         }
@@ -124,3 +129,9 @@ export default Body
 // -------------------------------------------------------------------------------------------------------
 
 // To make the cards clickable, we used the Link component provided by React Router DOM, which redirects to the specified path. The restaurant's ID is linked to the path dynamically.
+
+// -------------------------------------------------------------------------------------------------------
+
+// Higher Order Function 
+
+// withPriceLabel is a Higher-Order Component. We have passed the RestaurantCard component into it, and it will return a new component with a label inside. Therefore, the RestaurantCardPriceLabel component includes a label.
