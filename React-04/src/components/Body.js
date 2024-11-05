@@ -1,6 +1,6 @@
 import React from "react"
 import RestaurantCard from "./RestaurantCard"
-import { Shimmer } from "./Shimmer"
+import {Shimmer} from "./Shimmer"
 import { Link } from "react-router-dom"
 import useRestaurantsData from "../utils/coustomHooks/useRestaurantsData"
 import useOnlineStatus from "../utils/coustomHooks/useOnlineStatus"
@@ -26,7 +26,7 @@ const Body = () => {
 
     return (
         <div className="flex justify-center w-full">
-            <div className="w-[70%] mb-8">
+            <div className="w-[70%] mb">
                 <div className="flex my-11 mx-14">
                     <div className="flex flex-1 border-solid border-2 border-gray-300 rounded-lg overflow-hidden">
                         <input 
@@ -52,8 +52,8 @@ const Body = () => {
                     >Top Rated Restaurants</button>
                 </div>
                 { filteredRestaurants.length === 0 ? (
-                        <div>
-                            {Array(10).fill("").map((_, index) => <Shimmer key={index} />)} 
+                        <div className="flex flex-wrap justify-between">
+                            {Array(12).fill("").map((_, index) => <Shimmer key={index} />)} 
                         </div>
                     ) : <div className="flex flex-wrap justify-between">
                         { filteredRestaurants.map( (restaurant) => (                       

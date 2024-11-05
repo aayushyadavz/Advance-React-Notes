@@ -1,7 +1,7 @@
-import {ShimmerForMenu} from "./Shimmer"
 import { useParams } from "react-router-dom"
 import Accordian from "./Accordian"
 import useRestaurantsMenu from "../utils/coustomHooks/useRestaurantsMenu"
+import {ShimmerForMenu} from "./Shimmer"
 
 const RestaurantsMenu = () => {
     const { resId } = useParams()
@@ -10,8 +10,12 @@ const RestaurantsMenu = () => {
     // If resMenu is null then load Shimmer compo.
     if (resMenu === null) {
         return (
-            <div className="shim-menu-container">
-                {Array(10).fill("").map((_, index) => <ShimmerForMenu key={index}/>)}
+            <div className="flex justify-center w-full pt-16">
+                <div className="w-[63%]">
+                    {Array(10).fill("").map((_, index) => (
+                        <ShimmerForMenu key={index} />
+                    ))}
+                </div>
             </div>
         )
     }
