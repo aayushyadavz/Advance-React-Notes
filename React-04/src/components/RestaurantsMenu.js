@@ -48,7 +48,8 @@ const RestaurantsMenu = () => {
                 <hr></hr>
                 <div>
                     { cards.map((cardData, index) => ( 
-                            cardData.card.card.itemCards && <Accordian 
+                            cardData.card.card.itemCards && 
+                            <Accordian 
                                 key={index} 
                                 accorTitle={cardData.card.card.title}
                                 itemCard={cardData.card.card.itemCards}
