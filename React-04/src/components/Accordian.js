@@ -1,18 +1,17 @@
-import { useState } from "react";
 import MenuCard from "./MenuCard"
-import { MENU_IMG_URL } from "../utils/constants"
 
-const Accordian = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
+
+const Accordian = ({data, isOpen, setShowIndex}) => {
+    // const [isOpen, setIsOpen] = useState(false);
 
     const toggleAccordion = () => {
-        setIsOpen(!isOpen);
+        setShowIndex(); 
     }
 
     return (
         <div>
-            <div className="flex justify-between cursor-pointer pt-5 px-4" onClick={toggleAccordion}>
-                <h3 className="text-2xl font-bold">{props.accorTitle}</h3>
+            <div className="flex justify-between cursor-pointer py-4 px-4 my-2 bg-white" onClick={toggleAccordion}>
+                <h3 className="text-2xl font-bold">{data.title} ({data.itemCards.length})</h3>
                 <div>
                     {isOpen ? (
                         <i className="fa-solid fa-angle-up"></i>
@@ -25,12 +24,10 @@ const Accordian = (props) => {
             {/* Only render content if the accordion is open */}
             {isOpen && (   
                 <div>
-                    {props.itemCard.map((item, index) => (
+                    {data.itemCards.map((item) => (
                         <MenuCard 
-                            key={index} 
-                            name={item.card.info.name} 
-                            price={item.card.info.price / 100 || item.card.info.defaultPrice / 100} 
-                            description={item.card.info.description} imageUrl={MENU_IMG_URL + item.card.info.imageId}
+                            key={item.card.info.id} 
+                            itemsData={item.card.info}
                         />
                     ))}
                 </div>

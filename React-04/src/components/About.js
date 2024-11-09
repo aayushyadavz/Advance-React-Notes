@@ -5,16 +5,16 @@ class About extends React.Component {
     constructor(props){
         super(props)
 
-        console.log("Parent constructor");
+        // console.log("Parent constructor");
         
     }
 
     componentDidMount(){ 
-        console.log("Parent component did mount");
+        // console.log("Parent component did mount");
     }
 
     render() {
-        console.log("Parent render");
+        // console.log("Parent render");
         
         return (
             <div>

@@ -1,4 +1,5 @@
 import React from "react"
+import UserContext from "../utils/UserContext"
 
 class User extends React.Component {
     constructor(props){
@@ -8,7 +9,7 @@ class User extends React.Component {
             userInfo: {}
         }
 
-        console.log("Child constructor");
+        // console.log("Child constructor");
     }
 
     async componentDidMount(){
@@ -21,22 +22,26 @@ class User extends React.Component {
             userInfo: data
         })
 
-        console.log("Child component did mount");
+        // console.log("Child component did mount");
         
     }
 
     componentDidUpdate() {
-        console.log("Child component did update");
+        // console.log("Child component did update");
     }
     
     render() {
-        console.log("Child render");
+        // console.log("Child render");
         
         const { name, location, avatar_url } = this.state.userInfo
 
         return (
             <div className="user">
                 <img src={avatar_url} style={ {width: "100px"} }/>
+                {/* Accessing UserContext in class based components */}
+                <UserContext.Consumer>
+                    {(data) => <p>{data.loggedInUser}</p>}
+                </UserContext.Consumer>
                 <h3>Name : {name}</h3>
                 <h3>Location : {location}</h3>
             </div>

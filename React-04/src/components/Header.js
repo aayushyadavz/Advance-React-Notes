@@ -1,19 +1,21 @@
 import { LOGO_URL } from "../utils/constants" // named imports
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import useOnlineStatus from "../utils/coustomHooks/useOnlineStatus"
+import UserContext from "../utils/UserContext"
 
 const Header = () => {
     const [ btnName, setBtnName ] = useState("Login")
     const onlineStatus = useOnlineStatus()
 
+    const { loggedInUser } = useContext(UserContext) // Accessing UserConext using a Hook (useContext)
+
     return (
         <div className="flex items-center justify-between px-5 shadow-lg">
             <div>
-                <Link to="/"><img 
-                    className="w-24" 
-                    src={LOGO_URL} 
-                /></Link>
+                <Link to="/">
+                    <img className="w-24" src={LOGO_URL} />
+                </Link>
             </div>
             <div>
                 <ul className="flex font-semibold text-lg hover:cursor-pointer text-gray-600">
@@ -38,7 +40,7 @@ const Header = () => {
                             btnName === "Login" ? setBtnName("Logout") : setBtnName("Login") 
                         }}>{btnName}</button>
                     </li>
-                    
+                    <li className="px-3 hover:text-orange-500">{loggedInUser}</li>
                 </ul>
             </div>
         </div>

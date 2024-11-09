@@ -1,4 +1,4 @@
-import React, {lazy, Suspense} from "react";
+import React, {lazy, Suspense, useEffect, useState} from "react";
 import ReactDOM from "react-dom/client"
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -7,15 +7,33 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 import RestaurantsMenu from "./components/RestaurantsMenu";
+import UserContext from "./utils/UserContext";
 
 const Grocery = lazy(() => import("./components/Grocery"))
 
 const AppLayout = () => {
+    // Modifying UserContext
+    // Suppose a Authentication
+    const [username, setUsername] = useState()
+
+    useEffect(() => {
+        // Suppose we make an API call and we send the username password
+        const data = { 
+            name: "Ayush Yadav" 
+        }
+        setUsername(data.name)
+    }, [])
+
     return (
-        <div className="app">
-            <Header />
-            <Outlet />
-        </div>
+        // When we wrap these inside UserContext.Provider, anywhere inside our app where the context provider is used, the value will be this new value (Ayush Yadav) instead of default value (Default User).
+        <UserContext.Provider value={ { loggedInUser: username } }> 
+            <div className="app">
+                {/* <UserContext.Provider value={{ loggedInUser: "Elon Musk" }}> */}
+                    <Header />
+                {/* </UserContext.Provider> */}
+                <Outlet />
+            </div>
+        </UserContext.Provider>
     )
 }
 
