@@ -8,7 +8,7 @@ const Header = () => {
     const [ btnName, setBtnName ] = useState("Login")
     const onlineStatus = useOnlineStatus()
 
-    const { loggedInUser } = useContext(UserContext) // Accessing UserConext using a Hook (useContext)
+    // const { loggedInUser } = useContext(UserContext) // Accessing UserConext using a Hook (useContext)
 
     return (
         <div className="flex items-center justify-between px-5 shadow-lg">
@@ -40,7 +40,7 @@ const Header = () => {
                             btnName === "Login" ? setBtnName("Logout") : setBtnName("Login") 
                         }}>{btnName}</button>
                     </li>
-                    <li className="px-3 hover:text-orange-500">{loggedInUser}</li>
+                    {/* <li className="px-3 hover:text-orange-500">{loggedInUser}</li> */}
                 </ul>
             </div>
         </div>

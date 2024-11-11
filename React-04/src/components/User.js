@@ -39,9 +39,9 @@ class User extends React.Component {
             <div className="user">
                 <img src={avatar_url} style={ {width: "100px"} }/>
                 {/* Accessing UserContext in class based components */}
-                <UserContext.Consumer>
+                {/* <UserContext.Consumer>
                     {(data) => <p>{data.loggedInUser}</p>}
-                </UserContext.Consumer>
+                </UserContext.Consumer> */}
                 <h3>Name : {name}</h3>
                 <h3>Location : {location}</h3>
             </div>

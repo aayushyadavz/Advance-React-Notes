@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import RestaurantCard, { withPriceLabel } from "./RestaurantCard"
 import {Shimmer} from "./Shimmer"
 import { Link } from "react-router-dom"
 import useRestaurantsData from "../utils/coustomHooks/useRestaurantsData"
 import useOnlineStatus from "../utils/coustomHooks/useOnlineStatus"
+import UserContext from "../utils/UserContext"
 
 const Body = () => {
     const { 
@@ -24,6 +25,8 @@ const Body = () => {
             <h1>You are out of internet connection! Please turn on you network to see content of this site.</h1>
         )
     }
+
+    const { loggedInUser, setUsername } = useContext(UserContext)
 
     return (
         <div className="flex justify-center w-full">
@@ -52,6 +55,14 @@ const Body = () => {
                         onClick={filterTopRated}  
                     >Top Rated Restaurants</button>
                 </div>
+               {/* Modifying the UserContext */}
+                {/* <div>
+                    <input 
+                        className="border border-black"
+                        value={loggedInUser}
+                        onChange={(e) => setUsername(e.target.value)} // The username value will be replaced with the value provided here, and the username is set for the loggedInUser value.
+                    />
+                </div> */}
                 { filteredRestaurants.length === 0 ? (
                         <div className="flex flex-wrap justify-between">
                             {Array(12).fill("").map((_, index) => <Shimmer key={index} />)} 
