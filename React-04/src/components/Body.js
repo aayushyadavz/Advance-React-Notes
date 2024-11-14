@@ -26,7 +26,8 @@ const Body = () => {
         )
     }
 
-    const { loggedInUser, setUsername } = useContext(UserContext)
+    // const { loggedInUser, setUsername } = useContext(UserContext)
+    
 
     return (
         <div className="flex justify-center w-full">

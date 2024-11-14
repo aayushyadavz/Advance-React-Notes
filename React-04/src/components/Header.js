@@ -2,13 +2,17 @@ import { LOGO_URL } from "../utils/constants" // named imports
 import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import useOnlineStatus from "../utils/coustomHooks/useOnlineStatus"
-import UserContext from "../utils/UserContext"
+// import UserContext from "../utils/UserContext"
+import { useSelector } from "react-redux"
 
 const Header = () => {
     const [ btnName, setBtnName ] = useState("Login")
     const onlineStatus = useOnlineStatus()
 
     // const { loggedInUser } = useContext(UserContext) // Accessing UserConext using a Hook (useContext)
+
+    // Subscribing to the store using a Selector
+    const cartItems = useSelector((store) => store.cart.items) 
 
     return (
         <div className="flex items-center justify-between px-5 shadow-lg">
@@ -34,7 +38,7 @@ const Header = () => {
                     <li className="px-3 hover:text-orange-500">
                         <Link to="/grocery" className="rout-link">Grocery</Link>
                     </li>
-                    <li className="px-3 hover:text-orange-500">Cart</li>
+                    <li className="px-3 hover:text-orange-500">Cart ({cartItems.length})</li>
                     <li className="px-3 hover:text-orange-500">
                         <button onClick={() => {
                             btnName === "Login" ? setBtnName("Logout") : setBtnName("Login") 

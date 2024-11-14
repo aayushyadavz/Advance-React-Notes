@@ -7,7 +7,9 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 import RestaurantsMenu from "./components/RestaurantsMenu";
-import UserContext from "./utils/UserContext";
+// import UserContext from "./utils/UserContext";
+import appstore from "./utils/appStore";
+import { Provider } from "react-redux"
 
 const Grocery = lazy(() => import("./components/Grocery"))
 
@@ -27,12 +29,17 @@ const AppLayout = () => {
     return (
         // When we wrap these inside UserContext.Provider, anywhere inside our app where the context provider is used, the value will be this new value (Ayush Yadav) instead of default value (Default User).
         // <UserContext.Provider value={ { loggedInUser: username, setUsername } }> 
+
+        // Provided the store to our application
+        <Provider store={appstore}>
             <div className="app">
                 {/* <UserContext.Provider value={{ loggedInUser: "Elon Musk" }}> */}
                     <Header />
                 {/* </UserContext.Provider> */}
                 <Outlet />
             </div>
+        </Provider>
+
         // </UserContext.Provider>
     )
 }
@@ -130,3 +137,21 @@ root.render(<RouterProvider router={appRouter} />)
 // .postcssrc is a configuration file for PostCSS. The code inside it indicates that Parcel needs .postcssrc to read and understand Tailwind CSS.
 
 // The `content` attribute inside `tailwind.config.js` contains an array with file extensions. These are the extensions where we can use Tailwind CSS.
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Redux
+
+// React and Redux are different libraries. Redux is primarily used for handling the state of an application. When we use Redux, our application becomes easier to debug.
+
+// React-Redux - is a library that acts as a bridge between React and Redux. Redux Toolkit - is the standard way of writing Redux logic, unlike earlier versions, which used vanilla Redux.
+
+// Redux store - is a large JavaScript object kept in a central, global location. It acts like a store from which any component can read or write data. Most of the major data is stored inside this Redux store.
+
+// Slice - It's fine to keep a lot of data in a single large object inside the Redux store. However, to prevent the Redux store from becoming too large and clumsy, we use something called a slices in Redux. A slice can be thought of as a small, manageable portion of the Redux store.
+
+// Dispatches Action (Write data in Cart) - Suppose we have an Add button, and we want to click it to modify the cart. This is done by dispatching an action when the button is clicked. This action then calls a function (Reducer) that modifies the cart (Slice of our Redux store).
+
+// Selector (Reading data from the store) - Suppose we need to read data from the store, such as the number of items added to the cart, and display it in the header component. To achieve this, we use something called a selector, which retrieves the required data from the store and allows us to display or modify it in the header component.
+
+// Subscribing to the store - This means that a component is subscribed to the store, such as the header component being synchronized with the store.
