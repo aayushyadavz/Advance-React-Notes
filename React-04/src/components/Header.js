@@ -14,6 +14,9 @@ const Header = () => {
     // Subscribing to the store using a Selector
     const cartItems = useSelector((store) => store.cart.items) 
 
+    // console.log(cartItems);
+    
+
     return (
         <div className="flex items-center justify-between px-5 shadow-lg">
             <div>
@@ -38,7 +41,9 @@ const Header = () => {
                     <li className="px-3 hover:text-orange-500">
                         <Link to="/grocery" className="rout-link">Grocery</Link>
                     </li>
-                    <li className="px-3 hover:text-orange-500">Cart ({cartItems.length})</li>
+                    <li className="px-3 hover:text-orange-500">
+                        <Link to="/cart">Cart ({cartItems.length})</Link>
+                    </li>
                     <li className="px-3 hover:text-orange-500">
                         <button onClick={() => {
                             btnName === "Login" ? setBtnName("Logout") : setBtnName("Login") 

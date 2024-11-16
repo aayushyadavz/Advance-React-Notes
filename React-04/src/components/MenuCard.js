@@ -1,6 +1,14 @@
 import { MENU_IMG_URL } from "../utils/constants"
+import { addItems } from "../utils/cartSlice"
+import { useDispatch } from "react-redux"
 
 const MenuCard = ({itemsData}) => {
+
+    const dispatch = useDispatch()
+
+    const handleClick = (itemsData) => {
+        dispatch(addItems(itemsData))
+    }
 
     return (
         <div className="flex justify-between py-3 px-4 items-center bg-white border-b-2 border-gray-100">
@@ -12,7 +20,10 @@ const MenuCard = ({itemsData}) => {
             <div className="mb-3 text-center relative">
                 <img className="w-40 h-36 object-cover rounded-xl" src={MENU_IMG_URL + itemsData.imageId} />
                 <div className="absolute inset-x-0 bottom-[-14px] pl-1">
-                    <button className="text-green-500 bg-white text-xl font-semibold px-8 py-1 shadow-lg rounded-lg">ADD</button>
+                    <button 
+                        className="text-green-500 bg-white text-xl font-semibold px-8 py-1 shadow-lg rounded-lg"
+                        onClick={() => handleClick(itemsData)}
+                    >ADD</button>
                 </div>
             </div>
         </div>
@@ -20,3 +31,7 @@ const MenuCard = ({itemsData}) => {
 }
 
 export default MenuCard 
+
+// Notes:
+
+// When the Add button is clicked, we call a function (handleClick) with itemsData passed as an argument. Inside handleClick, we call the dispatch function, which takes a reducer function from the slice (addItems) and passes itemsData into it. This ensures that action.payload can perform its task.

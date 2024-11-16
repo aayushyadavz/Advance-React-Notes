@@ -5,6 +5,7 @@ import Body from "./components/Body";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
+import Cart from "./components/Cart"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 import RestaurantsMenu from "./components/RestaurantsMenu";
 // import UserContext from "./utils/UserContext";
@@ -64,6 +65,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/grocery",
                 element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
+            },
+            {
+                path: "/cart",
+                element: <Cart />
             },
             {
                 path: "/menu/:resId",
