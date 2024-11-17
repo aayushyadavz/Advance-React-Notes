@@ -21,7 +21,7 @@ const MenuCard = ({itemsData}) => {
                 <img className="w-40 h-36 object-cover rounded-xl" src={MENU_IMG_URL + itemsData.imageId} />
                 <div className="absolute inset-x-0 bottom-[-14px] pl-1">
                     <button 
-                        className="text-green-500 bg-white text-xl font-semibold px-8 py-1 shadow-lg rounded-lg"
+                        className="text-green-500 bg-white text-xl font-semibold px-8 py-1 shadow-lg rounded-lg hover:bg-gray-300"
                         onClick={() => handleClick(itemsData)}
                     >ADD</button>
                 </div>
