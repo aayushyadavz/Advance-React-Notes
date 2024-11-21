@@ -31,7 +31,7 @@ const Body = () => {
 
     return (
         <div className="flex justify-center w-full">
-            <div className="w-[70%] mb-8">
+            <div className="w-[70%] mb-8 mt-20">
                 <div className="flex my-11 mx-14">
                     <div className="flex flex-1 border-solid border-2 border-gray-300 rounded-lg overflow-hidden">
                         <input 

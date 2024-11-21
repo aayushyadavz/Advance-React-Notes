@@ -160,3 +160,33 @@ root.render(<RouterProvider router={appRouter} />)
 // Selector (Reading data from the store) - Suppose we need to read data from the store, such as the number of items added to the cart, and display it in the header component. To achieve this, we use something called a selector, which retrieves the required data from the store and allows us to display or modify it in the header component.
 
 // Subscribing to the store - This means that a component is subscribed to the store, such as the header component being synchronized with the store.
+
+// -----------------------------------------------------------------------------------------------------------------
+
+// Testing -
+
+// Developer Testing -
+// There are two types of testing for a developer: manual testing and writing code to test the application.
+
+/* Different types of testing that a developer performs in a React application -
+
+- Unit Testing: Testing individual React components or functions in isolation to ensure they work as expected. For example, testing only a header component without relying on other components or external dependencies.
+
+- Integration Testing: Testing how multiple components or modules work together as a system. For example, verifying that searching in a search box correctly filters and displays relevant results from a list of items.
+
+- End-to-End Testing (E2E Testing): Testing a React app from the moment the user lands on the website to when they leave. This involves testing all the flows and simulating what the user would do throughout the app. */
+
+// React Testing Library - builds on top of DOM Testing Library. RTL uses Jest behind the scene which is a delightful JavaScript Testing Framework with a focus on simplicity.
+
+/* 
+    (1) : `npm i -D @testing-library/react` : for installing React Testing Library.
+    (2) : `npm i -D jest` : for installing jest.
+    (3) : `npm install --save-dev babel-jest @babel/core @babel/preset-env` : for dependencies which are required to use babel, cause we are using jest along with babel.
+    (4) : After this, created a file `babel.config.js` (configured babel in our application).
+    (5) : Then, a file named `.parcelrc` was created. Parcel uses Babel, and the Babel configuration (`babel.config.js`) can conflict with Parcel's Babel configuration. The `babel.config.js` file will be the configuration that is ultimately used. And this will disable default babel transpilation.
+    (6) : Jest configuration, `npx jest --init` (executing).
+    (7) : `npm install --save-dev jest-environment-jsdom`, installing JS DOM.
+    (8) : install `npm i -D @babel/preset-react`, to make JSX work in test cases.
+    (9) : Include `@babel/preset-react` inside `babel.config.js`, so that our JSX inside test cases can be converted into HTML.
+    (10) : Install `npm i -D @testing-library/jest-dom` & `import "@testing-library/jest-dom" in your testing file`. 
+*/ 

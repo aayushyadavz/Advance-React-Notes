@@ -10,8 +10,10 @@ const cartSlice = createSlice({
         addItems: (state, action) => { // addItems is a action and inside it there is a reducer function which is modifies the state based on the action
             state.items.push(action.payload)
         },
-        removeItems: (state) => {
-            state.items.pop()
+        removeItems: (state, action) => {
+            state.items = state.items.filter((item) => item.id !== action.payload) 
+            // filter Keeps Elements That Return true and returns a new array
+            // e.g. - For { id: 2, name: "Burger" }: 2 !== 2 → false (removes the item).
         },
         clearCart: (state) => {
             state.items.length = 0

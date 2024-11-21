@@ -36,7 +36,7 @@ const RestaurantsMenu = () => {
     )
     
     return (
-        <div className="flex justify-center w-full pt-16">
+        <div className="flex justify-center w-full pt-16 mt-3">
             <div className="w-3/5 mb-8">
                 <h1 className="text-3xl font-bold pl-4">{name}</h1>
                 <div className="p-4 rounded-br-3xl rounded-bl-3xl mt-4 mb-6" style={{background: "linear-gradient(rgb(255, 255, 255) -6.71%, rgb(235, 235, 242) 56.19%, rgb(223, 223, 231) 106.56%)"}}>
