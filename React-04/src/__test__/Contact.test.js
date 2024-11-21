@@ -1,42 +1,48 @@
-import { render, screen } from "@testing-library/react"
-import Contact from "../components/Contact"
-import "@testing-library/jest-dom" // to get the list of a lot of function that we can assert to. e.g. toBeInTheDocument() 
+// UNIT TESTING
 
-test("Should load contact us component", () => {
-    render(<Contact />) // rendering component onto JS DOM
+import { render, screen } from "@testing-library/react";
+import Contact from "../components/Contact";
+import "@testing-library/jest-dom"; // to get the list of a lot of function that we can assert to. e.g. toBeInTheDocument()
 
-    const heading = screen.getByRole('heading') // testing that heading is there or not
+// for grouping test cases
+describe("Contact Us Test Cases", () => {
+  // this test can be written as it() also
+  test("Should load contact us component", () => {
+    render(<Contact />); // rendering component onto JS DOM
+
+    const heading = screen.getByRole("heading"); // testing that heading is there or not
 
     // Assertion
-    expect(heading).toBeInTheDocument()
-}) 
+    expect(heading).toBeInTheDocument();
+  });
 
-test("Should load button inside contact us component", () => {
-    render(<Contact />)
+  test("Should load button inside contact us component", () => {
+    render(<Contact />);
 
-    // const button = screen.getByRole('button') 
-    const button = screen.getByText('Submit')
+    // const button = screen.getByRole('button')
+    const button = screen.getByText("Submit");
 
-    expect(button).toBeInTheDocument()
-})
+    expect(button).toBeInTheDocument();
+  });
 
-test("Should load input box with placeholder name inside contact us component", () => {
-    render(<Contact />)
+  test("Should load input box with placeholder name inside contact us component", () => {
+    render(<Contact />);
 
-    const input = screen.getByPlaceholderText('Name')
+    const input = screen.getByPlaceholderText("Name");
 
-    expect(input).toBeInTheDocument()
-})
+    expect(input).toBeInTheDocument();
+  });
 
-test("Should load 2 input boxes inside contact us component", () => {
-    render(<Contact />)
+  test("Should load 2 input boxes inside contact us component", () => {
+    render(<Contact />);
 
     // Querying
-    const inputBoxes = screen.getAllByRole('textbox') // for multiple items we will use `.getAllByRole()`
+    const inputBoxes = screen.getAllByRole("textbox"); // for multiple items we will use `.getAllByRole()`
 
     console.log(inputBoxes.length); // returns a array with 2 elements
     // when we console log what is returned over there, it return JSX element/React element/Object
 
     // expect(inputBoxes.length).toBe(2)
-    expect(inputBoxes.length).not.toBe(3)
-})
+    expect(inputBoxes.length).not.toBe(3);
+  });
+});
