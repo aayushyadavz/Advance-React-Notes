@@ -1,5 +1,4 @@
 // UNIT TESTING
-
 import { render, screen } from "@testing-library/react";
 import Contact from "../components/Contact";
 import "@testing-library/jest-dom"; // to get the list of a lot of function that we can assert to. e.g. toBeInTheDocument()
