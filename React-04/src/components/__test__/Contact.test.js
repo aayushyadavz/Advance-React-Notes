@@ -1,6 +1,6 @@
 // UNIT TESTING
 import { render, screen } from "@testing-library/react";
-import Contact from "../components/Contact";
+import Contact from "../Contact";
 import "@testing-library/jest-dom"; // to get the list of a lot of function that we can assert to. e.g. toBeInTheDocument()
 
 // for grouping test cases
@@ -38,7 +38,7 @@ describe("Contact Us Test Cases", () => {
     // Querying
     const inputBoxes = screen.getAllByRole("textbox"); // for multiple items we will use `.getAllByRole()`
 
-    console.log(inputBoxes.length); // returns a array with 2 elements
+    // console.log(inputBoxes.length); // returns a array with 2 elements
     // when we console log what is returned over there, it return JSX element/React element/Object
 
     // expect(inputBoxes.length).toBe(2)

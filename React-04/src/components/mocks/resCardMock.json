@@ -1,0 +1,91 @@
+{
+    "info": {
+        "id": "16866",
+        "name": "Pizza Hut",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/16/ff4610b0-18c6-4353-8437-ac5af51ecfa6_16866.jpg",
+        "locality": "Sector 3",
+        "areaName": "Rohini",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+            "Pizzas"
+        ],
+        "avgRating": 4.2,
+        "parentId": "721",
+        "avgRatingString": "4.2",
+        "totalRatingsString": "6.4K+",
+        "sla": {
+            "deliveryTime": 26,
+            "lastMileTravel": 2,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "2.0 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-22 23:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Rxawards/_CATEGORY-Pizza.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT ₹189"
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+        "context": "seo-data-03e5b30d-de93-49f3-b8af-171680778a1a"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/city/delhi/pizza-hut-sector-3-rohini-rest16866",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}

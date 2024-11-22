@@ -1,96 +1,113 @@
-import React, { useContext } from "react"
-import RestaurantCard, { withPriceLabel } from "./RestaurantCard"
-import {Shimmer} from "./Shimmer"
-import { Link } from "react-router-dom"
-import useRestaurantsData from "../utils/coustomHooks/useRestaurantsData"
-import useOnlineStatus from "../utils/coustomHooks/useOnlineStatus"
-import UserContext from "../utils/UserContext"
+import React, { useContext } from "react";
+import RestaurantCard, { withPriceLabel } from "./RestaurantCard";
+import { Shimmer } from "./Shimmer";
+import { Link } from "react-router-dom";
+import useRestaurantsData from "../utils/coustomHooks/useRestaurantsData";
+import useOnlineStatus from "../utils/coustomHooks/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
-    const { 
-        filteredRestaurants,
-        clearInputSearch,
-        searchText,
-        setSearchText,
-        filterTopRated,
-        filterRestaurants,
-        isFiltered
-    } = useRestaurantsData()
+  const {
+    filteredRestaurants,
+    clearInputSearch,
+    searchText,
+    setSearchText,
+    filterTopRated,
+    filterRestaurants,
+    isFiltered,
+  } = useRestaurantsData();
 
-    const onlineStatus = useOnlineStatus()
-    const RestaurantCardPriceLabel = withPriceLabel(RestaurantCard)
+  const onlineStatus = useOnlineStatus();
+  const RestaurantCardPriceLabel = withPriceLabel(RestaurantCard);
 
-    if (onlineStatus === false) {
-        return (
-            <h1>You are out of internet connection! Please turn on you network to see content of this site.</h1>
-        )
-    }
-
-    // const { loggedInUser, setUsername } = useContext(UserContext)
-    
-
+  if (onlineStatus === false) {
     return (
-        <div className="flex justify-center w-full">
-            <div className="w-[70%] mb-8 mt-20">
-                <div className="flex my-11 mx-14">
-                    <div className="flex flex-1 border-solid border-2 border-gray-300 rounded-lg overflow-hidden">
-                        <input 
-                            type="text" 
-                            className="w-full py-2 px-4 focus:outline-none text-lg font-semibold" 
-                            placeholder="Search for restaurants and food" 
-                            value={searchText} 
-                            onChange={(e) => { 
-                                setSearchText(e.target.value) 
-                            }} 
-                        />
-                        { searchText && (<button className="bg-white text-gray-500 text-3xl pr-2 pb-1 font-semibold" onClick={clearInputSearch}>&times;</button>) }
-                    </div>
-                    <button 
-                        onClick={filterRestaurants}
-                    ><i className="fa-solid fa-magnifying-glass text-xl text-gray-500 ml-3 pt-1"></i></button>
-                </div>
-                <h1 className="text-3xl font-bold">Restaurants with online food delivery near you</h1>
-                <div className="mt-5 mb-8 font-medium text-sm">
-                    <button
-                        className={`border border-gray-400 p-2 rounded-full shadow-md ${isFiltered ? 'bg-gray-200' : 'bg-transparent'}`}
-                        onClick={filterTopRated}  
-                    >Top Rated Restaurants</button>
-                </div>
-               {/* Modifying the UserContext */}
-                {/* <div>
+      <h1>
+        You are out of internet connection! Please turn on you network to see
+        content of this site.
+      </h1>
+    );
+  }
+
+  // const { loggedInUser, setUsername } = useContext(UserContext)
+
+  return (
+    <div className="flex justify-center w-full">
+      <div className="w-[70%] mb-8 mt-20">
+        <div className="flex my-11 mx-14">
+          <div className="flex flex-1 border-solid border-2 border-gray-300 rounded-lg overflow-hidden">
+            <input
+              type="text"
+              className="w-full py-2 px-4 focus:outline-none text-lg font-semibold"
+              placeholder="Search for restaurants and food"
+              value={searchText}
+              onChange={(e) => {
+                setSearchText(e.target.value);
+              }}
+            />
+            {searchText && (
+              <button
+                className="bg-white text-gray-500 text-3xl pr-2 pb-1 font-semibold"
+                onClick={clearInputSearch}
+              >
+                &times;
+              </button>
+            )}
+          </div>
+          <button onClick={filterRestaurants}>
+            <i className="fa-solid fa-magnifying-glass text-xl text-gray-500 ml-3 pt-1"></i>
+          </button>
+        </div>
+        <h1 className="text-3xl font-bold">
+          Restaurants with online food delivery near you
+        </h1>
+        <div className="mt-5 mb-8 font-medium text-sm">
+          <button
+            className={`border border-gray-400 p-2 rounded-full shadow-md ${
+              isFiltered ? "bg-gray-200" : "bg-transparent"
+            }`}
+            onClick={filterTopRated}
+          >
+            Top Rated Restaurants
+          </button>
+        </div>
+        {/* Modifying the UserContext */}
+        {/* <div>
                     <input 
                         className="border border-black"
                         value={loggedInUser}
                         onChange={(e) => setUsername(e.target.value)} // The username value will be replaced with the value provided here, and the username is set for the loggedInUser value.
                     />
                 </div> */}
-                { filteredRestaurants.length === 0 ? (
-                        <div className="flex flex-wrap justify-between">
-                            {Array(12).fill("").map((_, index) => <Shimmer key={index} />)} 
-                        </div>
-                    ) : <div className="flex flex-wrap justify-between">
-                        { filteredRestaurants.map( (restaurant) => (                       
-                                <Link 
-                                    to={"/menu/"+ restaurant.info.id} 
-                                    key={restaurant.info.id}
-                                    >
-                                    { restaurant.info.aggregatedDiscountInfoV3 ? 
-                                        <RestaurantCardPriceLabel resData={restaurant} /> : 
-                                        <RestaurantCard resData={restaurant} /> 
-                                    }
-                                </Link>                        
-                            )) 
-                        }
-                    </div> 
-                }
-            </div>
-        </div>
-    )
-}
+        {filteredRestaurants.length === 0 ? (
+          <div className="flex flex-wrap justify-between">
+            {Array(12)
+              .fill("")
+              .map((_, index) => (
+                <Shimmer key={index} />
+              ))}
+          </div>
+        ) : (
+          <div className="flex flex-wrap justify-between">
+            {filteredRestaurants.map((restaurant) => (
+              <Link to={"/menu/" + restaurant.info.id} key={restaurant.info.id}>
+                {restaurant.info.aggregatedDiscountInfoV3 ? (
+                  <RestaurantCardPriceLabel resData={restaurant} />
+                ) : (
+                  <RestaurantCard resData={restaurant} />
+                )}
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
-export default Body
+export default Body;
 
-// Notes : 
+// Notes :
 
 // How React works behind the scenes:
 
@@ -144,6 +161,6 @@ export default Body
 
 // -------------------------------------------------------------------------------------------------------
 
-// Higher Order Function 
+// Higher Order Function
 
 // withPriceLabel is a Higher-Order Component. We have passed the RestaurantCard component into it, and it will return a new component with a label inside. Therefore, the RestaurantCardPriceLabel component includes a label.

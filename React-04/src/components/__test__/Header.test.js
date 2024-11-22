@@ -1,8 +1,8 @@
 // UNIT TESTING
-import Header from "../components/Header";
+import Header from "../Header";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
-import appStore from "../utils/appStore";
+import appStore from "../../utils/appStore";
 import { BrowserRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
 
