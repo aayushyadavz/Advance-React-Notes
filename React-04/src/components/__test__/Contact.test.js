@@ -5,6 +5,22 @@ import "@testing-library/jest-dom"; // to get the list of a lot of function that
 
 // for grouping test cases
 describe("Contact Us Test Cases", () => {
+  // beforeAll(() => {
+  //   console.log("Before All");
+  // });
+
+  // beforeEach(() => {
+  //   console.log("Before Each");
+  // });
+
+  // afterAll(() => {
+  //   console.log("After All");
+  // });
+
+  // afterEach(() => {
+  //   console.log("After Each");
+  // });
+
   // this test can be written as it() also
   test("Should load contact us component", () => {
     render(<Contact />); // rendering component onto JS DOM

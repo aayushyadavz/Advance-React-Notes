@@ -4,7 +4,7 @@ import { Shimmer } from "./Shimmer";
 import { Link } from "react-router-dom";
 import useRestaurantsData from "../utils/coustomHooks/useRestaurantsData";
 import useOnlineStatus from "../utils/coustomHooks/useOnlineStatus";
-import UserContext from "../utils/UserContext";
+// import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const {
@@ -54,7 +54,7 @@ const Body = () => {
               </button>
             )}
           </div>
-          <button onClick={filterRestaurants}>
+          <button data-testid="search" onClick={filterRestaurants}>
             <i className="fa-solid fa-magnifying-glass text-xl text-gray-500 ml-3 pt-1"></i>
           </button>
         </div>

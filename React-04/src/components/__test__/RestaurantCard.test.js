@@ -1,3 +1,4 @@
+// UNIT TESTING
 import { render, screen } from "@testing-library/react";
 import RestaurantCard, { withPriceLabel } from "../RestaurantCard";
 import MOCK_DATA from "../mocks/resCardMock.json";
