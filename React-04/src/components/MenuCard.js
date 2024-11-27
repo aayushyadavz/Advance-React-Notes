@@ -10,7 +10,10 @@ const MenuCard = ({ itemsData }) => {
   };
 
   return (
-    <div className="flex justify-between py-3 px-4 items-center bg-white border-b-2 border-gray-100">
+    <div
+      data-testid="foodItems"
+      className="flex justify-between py-3 px-4 items-center bg-white border-b-2 border-gray-100"
+    >
       <div className="w-8/12 mb-4">
         <h3 className="text-xl font-bold text-gray-600">{itemsData.name}</h3>
         <p className="text-lg font-medium mb-4">

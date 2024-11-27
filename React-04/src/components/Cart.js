@@ -23,8 +23,8 @@ const Cart = () => {
               Cart (Added items)
             </h1>
             <div className="text-center px-28">
-              {items.map((item) => (
-                <CartItems itemsData={item} />
+              {items.map((item, index) => (
+                <CartItems key={index} itemsData={item} />
               ))}
               <div className="mt-9 mb-4">
                 <button

@@ -13,8 +13,6 @@ const useRestaurantsMenu = (resId) => {
   const fetchMenu = async () => {
     const response = await fetch(MENU_URL + resId + REST_OF_MENU_URL); // Putting resId between the Api URL
     const data = await response.json();
-    console.log(data);
-
     setResMenu(data.data);
   };
 
