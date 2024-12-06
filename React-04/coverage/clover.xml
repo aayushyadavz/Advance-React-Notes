@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1732711704157" clover="3.2.0">
-  <project timestamp="1732711704157" name="All files">
-    <metrics statements="49" coveredstatements="45" conditionals="14" coveredconditionals="10" methods="22" coveredmethods="18" elements="85" coveredelements="73" complexity="0" loc="49" ncloc="49" packages="3" files="7" classes="7"/>
+<coverage generated="1732712096232" clover="3.2.0">
+  <project timestamp="1732712096233" name="All files">
+    <metrics statements="127" coveredstatements="114" conditionals="32" coveredconditionals="26" methods="52" coveredmethods="42" elements="211" coveredelements="182" complexity="0" loc="127" ncloc="127" packages="3" files="17" classes="17"/>
     <package name="components">
-      <metrics statements="39" coveredstatements="35" conditionals="14" coveredconditionals="10" methods="19" coveredmethods="15"/>
+      <metrics statements="71" coveredstatements="66" conditionals="28" coveredconditionals="23" methods="33" coveredmethods="29"/>
+      <file name="Accordian.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\components\Accordian.js">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="30" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="30" type="stmt"/>
+        <line num="32" count="54" type="stmt"/>
+      </file>
+      <file name="Body.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\components\Body.js">
+        <metrics statements="10" coveredstatements="9" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="23" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="34" count="7" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="87" count="24" type="stmt"/>
+        <line num="93" count="27" type="stmt"/>
+      </file>
       <file name="Cart.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\components\Cart.js">
         <metrics statements="8" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="3"/>
         <line num="5" count="1" type="stmt"/>
@@ -24,6 +45,11 @@
         <line num="12" count="1" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
       </file>
+      <file name="Contact.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\components\Contact.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+      </file>
       <file name="Header.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\components\Header.js">
         <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="8" count="2" type="stmt"/>
@@ -42,6 +68,18 @@
         <line num="12" count="54" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
       </file>
+      <file name="RestaurantCard.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\components\RestaurantCard.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="6" count="29" type="stmt"/>
+        <line num="13" count="29" type="stmt"/>
+        <line num="15" count="29" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="49" count="8" type="stmt"/>
+        <line num="51" count="24" type="stmt"/>
+        <line num="52" count="24" type="stmt"/>
+        <line num="54" count="24" type="stmt"/>
+      </file>
       <file name="RestaurantsMenu.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\components\RestaurantsMenu.js">
         <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
         <line num="7" count="1" type="stmt"/>
@@ -58,16 +96,86 @@
         <line num="79" count="30" type="stmt"/>
         <line num="84" count="1" type="cond" truecount="1" falsecount="1"/>
       </file>
+      <file name="Shimmer.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\components\Shimmer.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="24" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="20" type="stmt"/>
+      </file>
+      <file name="sum.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\components\sum.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
     </package>
     <package name="utils">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="11" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
       <file name="appStore.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\utils\appStore.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="4" count="2" type="stmt"/>
       </file>
+      <file name="cartSlice.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\utils\cartSlice.js">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+      </file>
+      <file name="constants.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\utils\constants.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+      </file>
     </package>
     <package name="utils.coustomHooks">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="45" coveredstatements="39" conditionals="4" coveredconditionals="3" methods="15" coveredmethods="12"/>
+      <file name="useOnlineStatus.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\utils\coustomHooks\useOnlineStatus.js">
+        <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
+      </file>
+      <file name="useRestaurantsData.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\utils\coustomHooks\useRestaurantsData.js">
+        <metrics statements="29" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="9" coveredmethods="8"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="7" type="stmt"/>
+        <line num="36" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="8" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="52" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="54" count="19" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="60" count="7" type="stmt"/>
+      </file>
       <file name="useRestaurantsMenu.js" path="D:\Frontend Development\Advance-React-Notes\React-04\src\utils\coustomHooks\useRestaurantsMenu.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="6" count="1" type="stmt"/>
